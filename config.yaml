@@ -5,30 +5,31 @@ condaenv: "InSilico_PCR"
 
 # url for raw data
 infile: "Zymo-PromethION-EVEN-BB-SN.fq.gz"
-url: "https://nanopore.s3.climb.ac.uk/"[infile]
+host: "https://nanopore.s3.climb.ac.uk/"
+url: os.environ[host] + os.environ[infile]
 
 # extract reads corresponding to the 16S PCR
-forwardp: "AGAGTTTGATCMTGGCTCAG"
-reversep: "CGGTWACCTTGTTACGACTT"
+forwardp:"AGAGTTTGATCMTGGCTCAG"
+reversep:"CGGTWACCTTGTTACGACTT"
 
 # result folder names
-split: "split_data"
-tmpout: "bbmap_out"
+split="split_data"
+tmpout="bbmap_out"
 
 # split data in 500k read bins
-lines: 2000000
+lines:2000000
 
 # threads for parallel tasks
-thr: 48
+thr:48
 
 # threads for compression
-pigt: 8
+pigt:8
 
 # max mem for BBMap tasks
-mem: "8g"
+mem:"8g"
 
 # stringent primer finding to avoid noisy reads
-cut: 0.8
+cut:0.8
 
 # minimum expected amplicon length for final filtering and merging
-minl: 1000
+minl:1000

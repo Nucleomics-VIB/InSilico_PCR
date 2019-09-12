@@ -7,7 +7,7 @@ This script aims at extracting sequences likely representing amplicon reads from
 The motivation behind this analysis was to simulate 16S long amplicon sequencing on ONT platform from data obtained from the 
 The data can be obtained from the **https://github.com/LomanLab/mockcommunity** site as a large Promethion fastq archive but any other ONT or Pacbio fastq data can be used with this code.
 
-== Data Availability (reproduced from https://github.com/LomanLab/mockcommunity/edit/master/README.md)
+## Data Availability (reproduced from https://github.com/LomanLab/mockcommunity/edit/master/README.md)
 
 |Name|Reads (M)|Yield (G)|FASTQ|Run Folder|Restarts|FAST5|
 |:--|:--|:--|:--|:--|:--|:--|
@@ -16,7 +16,7 @@ The data can be obtained from the **https://github.com/LomanLab/mockcommunity** 
 |Zymo-GridION-LOG-BB-SN|3.7|16|[fastq.gz](https://nanopore.s3.climb.ac.uk/Zymo-GridION-LOG-BB-SN.fq.gz)|[48h run](https://nanopore.s3.climb.ac.uk/Zymo-GridION-LOG-BB-SN_basecalled.tgz)|n/a|[signal.tar](https://nanopore.s3.climb.ac.uk/Zymo-GridION-LOG-BB-SN_signal.tar)|
 |Zymo-GridION-EVEN-BB-SN|3.5|14|[fastq.gz](https://nanopore.s3.climb.ac.uk/Zymo-GridION-EVEN-BB-SN.fq.gz)|[48h run](https://nanopore.s3.climb.ac.uk/Zymo-GridION-EVEN-BB-SN_basecalled.tgz)|n/a|[signal.tar](https://nanopore.s3.climb.ac.uk/Zymo-GridION-EVEN-BB-SN_signal.tar)|
 
-== method ==
+## method
 
 The method used to extract sequences between primers was developed by Brian Bushnell and explained [here](https://www.biostars.org/p/216039/#216054)
 
@@ -27,7 +27,7 @@ The method used to extract sequences between primers was developed by Brian Bush
 # extract 'matching' regions using BBMAp cutprimers.sh 
 # merge all results and keep only regions larger than a certain size (could be changed easily to size range)
 
-== future plans ==
+## future plans
 
 This code should and will be changed to a **snakemake** pipeline in order to be more portable. The yaml fiel is the first step towards this transition.
 

@@ -7,7 +7,9 @@ This script aims at extracting sequences likely representing amplicon reads from
 The motivation behind this analysis was to simulate 16S long amplicon sequencing on ONT platform from data obtained from the 
 The data can be obtained from the **https://github.com/LomanLab/mockcommunity** site as a large Promethion fastq archive but any other ONT or Pacbio fastq data can be used with this code.
 
-## Data Availability (reproduced from https://github.com/LomanLab/mockcommunity/edit/master/README.md)
+## Data Availability 
+
+<il>(reproduced from https://github.com/LomanLab/mockcommunity/edit/master/README.md)</il>
 
 |Name|Reads (M)|Yield (G)|FASTQ|Run Folder|Restarts|FAST5|
 |:--|:--|:--|:--|:--|:--|:--|

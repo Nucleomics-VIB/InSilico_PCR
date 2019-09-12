@@ -5,11 +5,11 @@ condaenv: "InSilico_PCR"
 
 # url for raw data
 infile: "Zymo-PromethION-EVEN-BB-SN.fq.gz"
-url: https://nanopore.s3.climb.ac.uk/[infile]
+url: "https://nanopore.s3.climb.ac.uk/"[infile]
 
 # extract reads corresponding to the 16S PCR
-forwardp:"AGAGTTTGATCMTGGCTCAG"
-reversep:"CGGTWACCTTGTTACGACTT"
+forwardp: "AGAGTTTGATCMTGGCTCAG"
+reversep: "CGGTWACCTTGTTACGACTT"
 
 # result folder names
 split: "split_data"

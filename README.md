@@ -20,12 +20,12 @@ The data can be obtained from the **https://github.com/LomanLab/mockcommunity** 
 
 The method used to extract sequences between primers was developed by Brian Bushnell and explained [here](https://www.biostars.org/p/216039/#216054)
 
-# set names and numeric limits in the config.yaml file (otherwise it will run my initial workflow)
-# split the data in small chunks for speed-up using parallel
-# search forward primer in all chunks using BBMap msa.sh
-# search reverse primer in all chunks using BBMap msa.sh
-# extract 'matching' regions using BBMAp cutprimers.sh 
-# merge all results and keep only regions larger than a certain size (could be changed easily to size range)
+* set names and numeric limits in the config.yaml file (otherwise it will run my initial workflow)
+* split the data in small chunks for speed-up using parallel
+* search forward primer in all chunks using BBMap msa.sh
+* search reverse primer in all chunks using BBMap msa.sh
+* extract 'matching' regions using BBMAp cutprimers.sh 
+* merge all results and keep only regions larger than a certain size (could be changed easily to size range)
 
 ## future plans
 

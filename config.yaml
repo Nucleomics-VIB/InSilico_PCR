@@ -1,12 +1,11 @@
 ---
-# path to conda on the machine
+# path to conda on my own machine (adapt for yours)
 condapath: "/opt/biotools/miniconda3/condabin"
 condaenv: "InSilico_PCR"
 
 # url for raw data
-infile: "Zymo-PromethION-EVEN-BB-SN.fq.gz"
 host: "https://nanopore.s3.climb.ac.uk/"
-url: os.environ[host] + os.environ[infile]
+infile: "Zymo-PromethION-EVEN-BB-SN.fq.gz"
 
 # extract reads corresponding to the 16S PCR
 forwardp:"AGAGTTTGATCMTGGCTCAG"

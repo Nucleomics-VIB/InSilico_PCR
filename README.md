@@ -31,7 +31,7 @@ The method used to extract sequences between primers was developed by Brian Bush
 
 ## future plans
 
-This code should and will be changed to a **snakemake** pipeline in order to be more portable. The yaml fiel is the first step towards this transition.
+This code should and will be changed to a **snakemake** pipeline in order to be more portable. The config.yaml file is the first step towards this transition.
 
 <hr>
 

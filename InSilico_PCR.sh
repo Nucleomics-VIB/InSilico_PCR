@@ -18,14 +18,14 @@ conda activate InSilico_PCR
 # get mockcommunity data from the cloud
 # https://github.com/LomanLab/mockcommunity
 infile=${1:-"Zymo-PromethION-EVEN-BB-SN.fq.gz"}
-url=${2:-"https://nanopore.s3.climb.ac.uk"}
+host=${2:-"https://nanopore.s3.climb.ac.uk"}
 
 # download once only
 if [[ ! -f ${infile} ]]; then
   echo "# downloading ${infile} (may take some time!)"
-  wget ${url}/${infile}
+  wget ${host}/${infile}
 else
-  echo "# ${infile} was already downloaded from ${url}"
+  echo "# ${infile} was already downloaded from ${host}"
 fi
 
 # speed-up

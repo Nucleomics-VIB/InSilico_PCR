@@ -18,14 +18,14 @@ conda activate InSilico_PCR
 # get mockcommunity data from the cloud
 # https://github.com/LomanLab/mockcommunity
 infile=${1:-"Zymo-PromethION-EVEN-BB-SN.fq.gz"}
-host=${2:-"https://nanopore.s3.climb.ac.uk"}
+url=${2:-"https://nanopore.s3.climb.ac.uk"}
 
 # download once only
 if [[ ! -f ${infile} ]]; then
   echo "# downloading ${infile} (may take some time!)"
-  wget ${host}/${infile}
+  wget ${url}/${infile}
 else
-  echo "# ${infile} was already downloaded from ${host}"
+  echo "# ${infile} was already downloaded from ${url}"
 fi
 
 # speed-up
@@ -46,6 +46,11 @@ lines=2000000
 # minimum expected amplicon length
 minl=1000
 
+# prepare folders
+# run logs
+logs=run_logs
+mkdir -p ${logs}
+
 # result folders
 split="split_data"
 mkdir -p ${split}
@@ -54,12 +59,12 @@ tmpout="bbmap_out"
 mkdir -p ${tmpout}
 
 # split large file into chunks for parallel
-if [[ ! -f ${split}/done.splitting ]]; then
+if [[ ! -f ${logs}/done.splitting ]]; then
   echo "# splitting the data in multiple smaller files and compressing (may take some time!)"
   zcat ${infile} |\
     split --numeric-suffixes --additional-suffix=.fq -a 3 -l ${lines} - ${split}/${infile%%\.fq\.gz}_ && \
     find ${split} -type f -name *_???.fq | parallel -j ${pigt} pigz -p ${pigt} {} && \
-    touch  ${split}/done.splitting
+    touch  ${logs}/done.splitting
 else
   echo "# splitting already done"
 fi
@@ -68,49 +73,49 @@ fi
 # run in BBMap msa.sh in parallel
 
 # find forward primer
-if [[ ! -f ${tmpout}/done.forward ]]; then
+if [[ ! -f ${logs}/done.forward ]]; then
   echo "# searching for forward primer sequence: ${forwardp} in all files"
   find ${split} -type f -name "${infile%%\.fq\.gz}_???.fq.gz" -printf '%P\n' |\
     sort -n |\
     parallel -j ${thr} msa.sh -Xmx${mem} qin=33 in=${split}/{} out=${tmpout}/forward_{}.sam literal="${forwardp}" rcomp=t cutoff=${cut} && \
-    touch ${tmpout}/done.forward
+    touch ${logs}/done.forward
 else
   echo "# forward search already done"
 fi
 
 # find reverse primer
-if [[ ! -f ${tmpout}/done.reverse ]]; then
+if [[ ! -f ${logs}/done.reverse ]]; then
   echo "# searching for reverse primer sequence: ${reversep} in all files"
   find ${split} -type f -name "${infile%%\.fq\.gz}_???.fq.gz" -printf '%P\n' |\
     sort -n |\
     parallel -j ${thr} msa.sh -Xmx${mem} qin=33 in=${split}/{} out=${tmpout}/reverse_{}.sam literal="${reversep}" rcomp=t cutoff=${cut} && \
-    touch ${tmpout}/done.reverse
+    touch ${logs}/done.reverse
 else
   echo "# reverse search already done"
 fi
 
 # extract regions with BBMap cutprimers.sh
-if [[ ! -f ${tmpout}/done.cutprimer ]]; then
+if [[ ! -f ${logs}/done.cutprimer ]]; then
 echo "# extracting template sequences between primer matches"
 find ${split} -type f -name "${infile%%\.fq\.gz}_???.fq.gz" -printf '%P\n' |\
   sort -n |\
   parallel -j ${thr} cutprimers.sh -Xmx${mem} in=${split}/{} out=${tmpout}/{}_16s.fq sam1=${tmpout}/forward_{}.sam sam2=${tmpout}/reverse_{}.sam include=t fixjunk=t &&\
-  touch ${tmpout}/done.cutprimer
+  touch ${logs}/done.cutprimer
 fi
 
 ####################################################
 # merge results and keep only reads longer than minl
-
-if [[ ! -f done.all ]]; then
+# Zymo-PromethION-EVEN-BB-SN_042.fq.gz_16s.fq
+if [[ ! -f ${logs}/done.merging ]]; then
   final="${infile%%\.fq\.gz}_16S.fq.gz"
   cat /dev/null > ${final}
 
   echo "# filtering and merging results to ${final}"
-  find ${tmpout} -type f -name "${infile%%\.fq\.gz}_???.fq.gz_16s.fq" -printf '%P\n' |\
+  find ${tmpout} -type f -name "${infile%%\.fq\.gz}_???.fq.gz_16s.fq" | sort -n |\
     xargs cat |\
     bioawk -c fastx -v varlen="${minl}" '{if (length($seq)>=varlen) print "@"$name" "$comment"\n"$seq"\n+\n"$qual}' |\
     bgzip >> ${final} && \
-    touch done.all
+    touch ${logs}/done.merging
 else
   echo "# already all done, force redo by deleting the subfolders and or final merge file: ${final}"
 fi

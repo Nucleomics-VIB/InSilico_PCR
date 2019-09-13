@@ -3,9 +3,11 @@
 InSilico PCR
 ==========
 
-This script aims at extracting sequences likely representing amplicon reads from a larger context longread set (gDNA reads or larger amplicon)
+This script aims at extracting sequences likely representing amplicon reads from a larger context longread set (gDNA reads or larger amplicon).
+
 The motivation behind this analysis was to simulate 16S long amplicon sequencing on ONT platform from data obtained from the 
-The data can be obtained from the **https://github.com/LomanLab/mockcommunity** site as a large Promethion fastq archive but any other ONT or Pacbio fastq data can be used with this code.
+
+The data used here is not ours but was obtained from the **https://github.com/LomanLab/mockcommunity** site as a large Promethion fastq archive but any other ONT or Pacbio fastq data can be used with this code <i>(please acknowledge [them](https://github.com/LomanLab/mockcommunity) when you would use this data too)</i>.
 
 ## Data Availability 
 

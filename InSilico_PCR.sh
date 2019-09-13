@@ -105,7 +105,7 @@ fi
 
 ####################################################
 # merge results and keep only reads longer than minl
-# Zymo-PromethION-EVEN-BB-SN_042.fq.gz_16s.fq
+# Zymo-PromethION-EVEN-BB-SN_042.fq.gz_16s.fq.gz
 if [[ ! -f ${logs}/done.merging ]]; then
   final="${infile%%\.fq\.gz}_16S.fq.gz"
   cat /dev/null > ${final}

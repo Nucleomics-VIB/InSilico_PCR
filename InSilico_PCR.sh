@@ -61,9 +61,7 @@ mkdir -p ${tmpout}
 # split large file into chunks for parallel
 if [[ ! -f ${logs}/done.splitting ]]; then
   echo "# splitting the data in multiple smaller files and compressing (may take some time!)"
-  zcat ${infile} |\
-    split --numeric-suffixes --additional-suffix=.fq -a 3 -l ${lines} - ${split}/${infile%%\.fq\.gz}_ && \
-    find ${split} -type f -name *_???.fq | parallel -j ${pigt} pigz -p ${pigt} {} && \
+  zcat ${infile} | split -a 3 -d -l ${lines} --filter='pigz -p ${pigt} > $FILE.fq.gz' - ${split}/${infile%%\.fq\.gz}_ &&
     touch  ${logs}/done.splitting
 else
   echo "# splitting already done"

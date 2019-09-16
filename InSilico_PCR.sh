@@ -20,10 +20,31 @@ conda activate InSilico_PCR
 infile=${1:-"Zymo-PromethION-EVEN-BB-SN.fq.gz"}
 url=${2:-"https://nanopore.s3.climb.ac.uk"}
 
+# get data
+
+# prepare folders
+# Raw data
+data=RawData
+mkdir -p ${data}
+
+# run logs
+logs=run_logs
+mkdir -p ${logs}
+
+# result folders
+split="split_data"
+mkdir -p ${split}
+
+tmpout="bbmap_out"
+mkdir -p ${tmpout}
+
 # download once only
-if [[ ! -f ${infile} ]]; then
+if [[ ! -f ${logs}/done.gettingdata ]]; then
   echo "# downloading ${infile} (may take some time!)"
+  cd RawData
   wget ${url}/${infile}
+  cd ../
+  touch ${logs}/done.gettingdata
 else
   echo "# ${infile} was already downloaded from ${url}"
 fi
@@ -46,26 +67,19 @@ lines=2000000
 # minimum expected amplicon length
 minl=1000
 
-# prepare folders
-# run logs
-logs=run_logs
-mkdir -p ${logs}
-
-# result folders
-split="split_data"
-mkdir -p ${split}
-
-tmpout="bbmap_out"
-mkdir -p ${tmpout}
-
 # split large file into chunks for parallel
 if [[ ! -f ${logs}/done.splitting ]]; then
   echo "# splitting the data in multiple smaller files and compressing (may take some time!)"
-  zcat ${infile} | split -a 3 -d -l ${lines} --filter='pigz -p ${pigt} > $FILE.fq.gz' - ${split}/${infile%%\.fq\.gz}_ &&
+  zcat ${data}/${infile} | split -a 3 -d -l ${lines} --filter='pigz -p '${pigt}' > $FILE.fq.gz' - ${split}/${infile%%\.fq\.gz}_ &&
     touch  ${logs}/done.splitting
 else
   echo "# splitting already done"
 fi
+
+#  zcat ${infile} |\
+#    split --numeric-suffixes --additional-suffix=.fq -a 3 -l ${lines} - ${split}/${infile%%\.fq\.gz}_ && \
+#    find ${split} -type f -name *_???.fq | parallel -j ${pigt} pigz -p ${pigt} {} && \
+# zcat ERR3152365.fastq.gz | split -a 3 -d -l ${lines} --filter='pigz -p ${pigt} > $FILE.fq.gz' - ${split}/${infile%%\.fq\.gz}_
 
 #################################
 # run in BBMap msa.sh in parallel

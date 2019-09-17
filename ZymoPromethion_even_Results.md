@@ -5,5 +5,5 @@ The gDNA reads data from [the mockcommunity](https://github.com/LomanLab/mockcom
 ## Results
 
 
-## references
+## References
 <a name="ref1">1</a>: 16S_primers: [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA).

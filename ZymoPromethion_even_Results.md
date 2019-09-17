@@ -2,7 +2,7 @@
 
 The gDNA **Zymo-PromethION-EVEN-BB-SN** reads data from [the mockcommunity](https://github.com/LomanLab/mockcommunity) was used as input to extract either the 'full-length' amplicon corresponding to the PCR **27F-U1492R** <sup id="a1">[1](#f1)</sup> or the shorter V3V4 amplicon corresponding to the primer combination **337F-805R** <sup id="a1">[1](#f1)</sup>.
 
-![16S_regions](pictures/16S_regions.jpg)[(ref)](https://teachthemicrobiome.weebly.com/sequencing-the-microbiome.html)
+[![16S_regions](pictures/16S_regions.jpg)](https://teachthemicrobiome.weebly.com/sequencing-the-microbiome.html)
 
 The extracted reads were submitted to the ONT [16S Epi2Me pipeline](https://nanoporetech.com/nanopore-sequencing-data-analysis) to be classified and allow direct comparison of the two amplicon options at different levels.
 

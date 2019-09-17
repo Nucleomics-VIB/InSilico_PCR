@@ -8,7 +8,7 @@ The extracted reads were submitted to the ONT 16S pipeline to cbe classified and
 
 The first pictures return the classification results at genus level
 
-
+![27F-U1492R_genus](pictures/27F-U1492R_genus.png)
 
 
 ## References

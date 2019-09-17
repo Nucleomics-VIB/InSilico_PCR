@@ -8,9 +8,7 @@ The extracted reads were submitted to the ONT [16S Epi2Me pipeline](https://nano
 
 * Epi2ME results for the long amplicon: [link](https://epi2me.nanoporetech.com/workflow_instance/214013)
 
-The first pictures return the classification results at genus level
-
-![27F-U1492R_genus](pictures/27F-U1492R_genus.png)
+ ![27F-U1492R_genus](pictures/27F-U1492R_genus.png)
 
 
 ## References

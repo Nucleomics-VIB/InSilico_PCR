@@ -7,9 +7,8 @@ The extracted reads were submitted to the ONT [16S Epi2Me pipeline](https://nano
 ## Results
 
 * Epi2ME **genus** results for the **27F-U1492R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214013)
-
- 27F: "AGAGTTTGATCMTGGCTCAG"
- 1492Rw: "CGGTWACCTTGTTACGACTT"
+**27F: "AGAGTTTGATCMTGGCTCAG"
+**1492Rw: "CGGTWACCTTGTTACGACTT"
 
  ![27F-U1492R_genus](pictures/27F-U1492R_genus.png)
 

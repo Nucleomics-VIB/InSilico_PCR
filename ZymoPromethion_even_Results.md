@@ -22,4 +22,4 @@ The extracted reads were submitted to the ONT [16S Epi2Me pipeline](https://nano
  ![337F-805R_genus](pictures/337F-805R_genus.png)
 
 ## References
-<b id="f1">1</b> 16S_primers [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a1)
+<b id="f1">1</b> 16S wiki page [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a1)

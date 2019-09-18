@@ -1,6 +1,6 @@
 ## Summary
 
-The gDNA **Zymo-PromethION-EVEN-BB-SN** reads data from [the mockcommunity](https://github.com/LomanLab/mockcommunity) was used as input to extract either the 'full-length' amplicon corresponding to the PCR **27F-U1492R** <sup id="a1">[1](#f1)</sup> or the shorter V3V4 amplicon corresponding to the primer combination **337F-805R** <sup id="a1">[1](#f1)</sup>.
+The gDNA **Zymo-PromethION-EVEN-BB-SN** reads data from [the mockcommunity](https://github.com/LomanLab/mockcommunity) was used as input to extract either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a1">[1](#f1)</sup> or the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a1">[1](#f1)</sup>.
 
 [![16S_regions](pictures/16S_regions.png)](https://teachthemicrobiome.weebly.com/sequencing-the-microbiome.html)
 
@@ -15,11 +15,11 @@ The extracted reads were submitted to the ONT [16S Epi2Me pipeline](https://nano
 
  ![27F-U1492R_genus](pictures/27F-U1492R_genus.png)
 
-* Epi2ME **genus** results for the **337F-805R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/)
+* Epi2ME **genus** results for the **337F-805R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214165)
    * 337F: "GACTCCTACGGGAGGCWGCAG"
    * 805R: "GACTACHVGGGTATCTAATCC"
 
  ![337F-805R_genus](pictures/337F-805R_genus.png)
 
 ## References
-<b id="f1">1</b> 16S_primers [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a1)
+<b id="f1">1</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a1)

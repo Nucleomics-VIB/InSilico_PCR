@@ -5,7 +5,7 @@
 
 # script: InSilico_PCR.sh
 # Stephane Plaisance VIB-NC September-18-2019 v1.0
-# conda with -f environment imported
+# conda with environment 'InSilico_PCR' imported
 # requires: bbmap, bioawk R (computing percentiles)
 #
 # visit our Git: https://github.com/Nucleomics-VIB
@@ -14,7 +14,7 @@
 # create a conda env to install the required apps
 # conda env create -f environment.yaml
 
-# adapt next line to point to the right conda.sh init script
+# adapt next line to point to the right conda.sh init script location
 # see conda activate script for details
 source /etc/profile.d/conda.sh
 conda activate InSilico_PCR

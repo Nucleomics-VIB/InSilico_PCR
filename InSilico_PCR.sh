@@ -1,10 +1,14 @@
 #!/bin/bash
 
 # script: InSilico_PCR.sh
+# Stephane Plaisance VIB-NC September-18-2019 v1.0
 
-# activate conda to get required tools
-# req: bbmap
-# req bioawk
+# script: InSilico_PCR.sh
+# Stephane Plaisance VIB-NC September-18-2019 v1.0
+# conda with -f environment imported
+# requires: bbmap, bioawk R (computing percentiles)
+#
+# visit our Git: https://github.com/Nucleomics-VIB
 
 # run once
 # create a conda env to install the required apps
@@ -46,7 +50,11 @@ cut=0.8
 lines=2000000
 
 # minimum expected amplicon length
-minl=1000
+# replaced by calculating the 1% percentile from the results 
+# in order to exclude very short reads
+# minl=1000
+# exclude the 1% shortest reads, change to 0 to disable filtering
+filterperc=0.01
 
 # prepare folders
 
@@ -137,6 +145,16 @@ fi
 # merge results and keep only reads longer than minl
 
 if [[ ! -f ${logs}/done.merging.${name}_${forwardl}_${reversel}.${ts} ]]; then
+
+  echo "# analysing read length distribution"
+  minl="$(find ${tmpout} -type f -name "${name}_???.fq.gz_16s.fq" | sort -n |\
+    xargs cat |\
+    bioawk -c fastx '{if (length($seq)>1) print length($seq)}' |\
+    Rscript -e 'unname(quantile (as.numeric (readLines ("stdin")), probs=c('${filterperc}')))' |\
+    cut -d' ' -f2)"
+  echo "# reads shorter than ${minl} nucleotides are removed during the filtering and merging step"
+  echo "# you can disable filtering by changing the value of filterperc to 0"
+  
   final="${name}_${forwardl}_${reversel}.${ts}.fq.gz"
   cat /dev/null > ${final}
 

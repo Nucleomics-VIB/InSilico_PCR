@@ -20,6 +20,7 @@ The extracted reads were submitted to the ONT [16S Epi2Me pipeline](https://nano
 * Epi2ME **genus** results for the **337F-805R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214508)
    * 337F: "GACTCCTACGGGAGGCWGCAG"
    * 805R: "GACTACHVGGGTATCTAATCC"
+   * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/337F-805R_214508_classification_16s_barcode-v1.csv)
 
  ![337F-805R_genus](pictures/337F-805R_reads.png)
 

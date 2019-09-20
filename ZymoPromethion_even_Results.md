@@ -1,6 +1,10 @@
 ## Summary
 
-The gDNA **Zymo-PromethION-EVEN-BB-SN** reads data from [the mockcommunity](https://github.com/LomanLab/mockcommunity) was used as input to extract either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a1">[1](#f1)</sup> or the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a1">[1](#f1)</sup>.
+The gDNA **Zymo-PromethION-EVEN-BB-SN** reads data from [the mockcommunity](https://github.com/LomanLab/mockcommunity) was used as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a1">[1](#f1)</sup> or the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a1">[1](#f1)</sup>.
+
+The hypothesis is that the gDNA sequencing done on the Zymo standard is unbiased as a matter of 16S content. In-Silico capture not being biased by mismatches as a real PCR would be, the captured subsets are probably more diverse than real amplicons would be and therefore constitute a superseed of the in-vitro truth.
+
+This experiments provides evidence for the primer bias introduced by the different 16S pairs and suggests that 16S screening should be thought more carefully when the results differ (see table at the bottom of this page)
 
 [![16S_regions](pictures/16S_regions.png)](https://teachthemicrobiome.weebly.com/sequencing-the-microbiome.html)
 

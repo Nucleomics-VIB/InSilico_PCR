@@ -15,11 +15,13 @@ The extracted reads were submitted to the ONT [16S Epi2Me pipeline](https://nano
 
  ![27F-U1492R_genus](pictures/27F-U1492R_genus.png)
 
-* Epi2ME **genus** results for the **337F-805R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214165)
+* Epi2ME **genus** results for the **337F-805R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214508)
    * 337F: "GACTCCTACGGGAGGCWGCAG"
    * 805R: "GACTACHVGGGTATCTAATCC"
 
- ![337F-805R_genus](pictures/337F-805R_genus.png)
+ ![337F-805R_genus](pictures/337F-805R_reads.png)
+
+![337F-805R_genus](pictures/337F-805R_genus.png)
 
 ## References
 <b id="f1">1</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a1)

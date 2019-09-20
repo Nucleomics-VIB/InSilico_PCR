@@ -55,5 +55,7 @@ The extracted read sets were submitted to the ONT [16S Epi2Me pipeline](https://
 
 
 ## References
+
 <b id="f1">1</b> Ultra-deep, long-read nanopore sequencing of mock microbial community standards [Link](https://www.biorxiv.org/content/10.1101/487033v2. [↩](#a1)
-<b id="f2">2</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#21)
+
+<b id="f2">2</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a2)

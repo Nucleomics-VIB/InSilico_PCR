@@ -5,7 +5,7 @@
 
 # script: InSilico_PCR.sh
 # Stephane Plaisance VIB-NC September-18-2019 v1.0
-# conda with environment 'InSilico_PCR' imported
+# conda with -f environment imported
 # requires: bbmap, bioawk R (computing percentiles)
 #
 # visit our Git: https://github.com/Nucleomics-VIB
@@ -14,7 +14,7 @@
 # create a conda env to install the required apps
 # conda env create -f environment.yaml
 
-# adapt next line to point to the right conda.sh init script location
+# adapt next line to point to the right conda.sh init script
 # see conda activate script for details
 source /etc/profile.d/conda.sh
 conda activate InSilico_PCR
@@ -28,7 +28,7 @@ url=${2:-"https://nanopore.s3.climb.ac.uk"}
 name=$(basename ${infile%\.fq\.gz})
 
 # speed-up
-thr=48
+thr=80
 pigt=8
 mem="8g"
 
@@ -38,10 +38,15 @@ mem="8g"
 #reversep="CGGTWACCTTGTTACGACTT"
 #reversel="1492Rw"
 
-forwardp="GACTCCTACGGGAGGCWGCAG"
-forwardl="337F"
-reversep="GACTACHVGGGTATCTAATCC"
-reversel="805R"
+#forwardp="GACTCCTACGGGAGGCWGCAG"
+#forwardl="337F"
+#reversep="GACTACHVGGGTATCTAATCC"
+#reversel="805R"
+
+forwardp="GTGYCAGCMGCCGCGGTAA"
+forwardl="515FB"
+reversep="CGGTWACCTTGTTACGACTT"
+reversel="1492Rw"
 
 # be stringent to avoid noisy reads
 cut=0.8

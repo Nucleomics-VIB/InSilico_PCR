@@ -1,6 +1,6 @@
 ## Summary
 
-The gDNA **Zymo-PromethION-EVEN-BB-SN** reads data from the **[Nanopore GridION and PromethION Mock Microbial Community Data Community Release](https://github.com/LomanLab/mockcommunity)** was used as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a1">[1](#f1)</sup>, the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a1">[1](#f1)</sup>, or a 'universal' amplicon corresponding to the combination **515FB-U1492Rw**.
+The gDNA **Zymo-PromethION-EVEN-BB-SN** reads data from the **[Nanopore GridION and PromethION Mock Microbial Community Data Community Release](https://github.com/LomanLab/mockcommunity)**<sup id="a1">[1](#f1)</sup> was used as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a2">[2](#f2)</sup>, the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a2">[2](#f2)</sup>, or a 'universal' amplicon corresponding to the combination **515FB-U1492Rw** <sup id="a2">[2](#f2)</sup>.
 
 We emit the hypothesis that the gDNA sequencing done on the Zymo standard is unbiased as a matter of 16S content. 
 
@@ -55,4 +55,5 @@ The extracted read sets were submitted to the ONT [16S Epi2Me pipeline](https://
 
 
 ## References
-<b id="f1">1</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a1)
+<b id="f1">1</b> Ultra-deep, long-read nanopore sequencing of mock microbial community standards [Link](https://www.biorxiv.org/content/10.1101/487033v2. [↩](#a1)
+<b id="f2">2</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#21)

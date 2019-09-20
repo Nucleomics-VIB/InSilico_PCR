@@ -1,6 +1,6 @@
 ## Summary
 
-The gDNA **Zymo-PromethION-EVEN-BB-SN** reads data from [the mockcommunity](https://github.com/LomanLab/mockcommunity) was used as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a1">[1](#f1)</sup>, the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a1">[1](#f1)</sup>, or a 'universal' amplicon corresponding to the combination **515FB-U1492Rw**.
+The gDNA **Zymo-PromethION-EVEN-BB-SN** reads data from **[the mockcommunity](https://github.com/LomanLab/mockcommunity)** was used as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a1">[1](#f1)</sup>, the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a1">[1](#f1)</sup>, or a 'universal' amplicon corresponding to the combination **515FB-U1492Rw**.
 
 We emit the hypothesis that the gDNA sequencing done on the Zymo standard is unbiased as a matter of 16S content. 
 

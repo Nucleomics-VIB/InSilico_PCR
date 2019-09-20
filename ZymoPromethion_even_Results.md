@@ -12,7 +12,7 @@ The next figure represents the 16s region with variable domains as dark blocks, 
 
 ## Method
 
-The extracted read sets (see code in https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/InSilico_PCR.sh) were submitted to the ONT [16S Epi2Me pipeline](https://nanoporetech.com/nanopore-sequencing-data-analysis) to be classified and allow direct comparison of the two amplicon options at different levels (only Genus is shown but the full data is provided in the 'results' folder).
+The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/InSilico_PCR.sh) were submitted to the ONT [16S Epi2Me pipeline](https://nanoporetech.com/nanopore-sequencing-data-analysis) to be classified and allow direct comparison of the two amplicon options at different levels (only Genus is shown but the full data is provided in the 'results' folder).
 
 ## Results
 

@@ -47,9 +47,9 @@ The extracted read sets were submitted to the ONT [16S Epi2Me pipeline](https://
    * U1492Rw: "CGGTWACCTTGTTACGACTT"
    * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/515FB-U1492Rw_214514_classification_16s_barcode-v1.csv)
 
- ![515FB-U1492Rw_reads](pictures/515FB-U1492Rw_reads.png)
+ ![515FB_1492Rw_reads](pictures/515FB_1492Rw_reads.png)
 
- ![515FB-U1492Rw_genus](pictures/515FB-U1492Rw_genus.png)
+ ![515FB_1492Rw_genus](pictures/515FB_1492Rw_genus.png)
 
 ## Comparing the results
 

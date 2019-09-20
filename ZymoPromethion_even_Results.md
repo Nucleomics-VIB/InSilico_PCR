@@ -8,6 +8,8 @@ The extracted reads were submitted to the ONT [16S Epi2Me pipeline](https://nano
 
 ## Results
 
+### **27F-U1492R** in-silico amplicon
+
 * Epi2ME **genus** results for the **27F-U1492R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214013)
    * 27F: "AGAGTTTGATCMTGGCTCAG"
    * 1492Rw: "CGGTWACCTTGTTACGACTT"
@@ -17,6 +19,8 @@ The extracted reads were submitted to the ONT [16S Epi2Me pipeline](https://nano
 
  ![27F-U1492R_genus](pictures/27F-U1492R_genus.png)
 
+### **337F-805R** in-silico amplicon
+
 * Epi2ME **genus** results for the **337F-805R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214508)
    * 337F: "GACTCCTACGGGAGGCWGCAG"
    * 805R: "GACTACHVGGGTATCTAATCC"
@@ -25,6 +29,17 @@ The extracted reads were submitted to the ONT [16S Epi2Me pipeline](https://nano
  ![337F-805R_genus](pictures/337F-805R_reads.png)
 
  ![337F-805R_genus](pictures/337F-805R_genus.png)
+
+### **515FB-U1492R** in-silico amplicon
+
+* Epi2ME **genus** results for the **515FB-U1492R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/XXXXX)
+   * 515FB: "GTGYCAGCMGCCGCGGTAA"
+   * 805R: "GACTACHVGGGTATCTAATCC"
+   * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/515FB-U1492R_XXXXXX_classification_16s_barcode-v1.csv)
+
+ ![515FB-U1492R_genus](pictures/515FB-U1492R_reads.png)
+
+ ![515FB-U1492R_genus](pictures/515FB-U1492R_genus.png)
 
 ## References
 <b id="f1">1</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a1)

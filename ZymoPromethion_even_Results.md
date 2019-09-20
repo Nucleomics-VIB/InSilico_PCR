@@ -1,14 +1,20 @@
 ## Summary
 
-The gDNA **Zymo-PromethION-EVEN-BB-SN** reads data from [the mockcommunity](https://github.com/LomanLab/mockcommunity) was used as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a1">[1](#f1)</sup> or the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a1">[1](#f1)</sup>.
+The gDNA **Zymo-PromethION-EVEN-BB-SN** reads data from [the mockcommunity](https://github.com/LomanLab/mockcommunity) was used as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a1">[1](#f1)</sup>, the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a1">[1](#f1)</sup>, or a 'universal' amplicon corresponding to the combination **515FB-U1492Rw**.
 
-The hypothesis is that the gDNA sequencing done on the Zymo standard is unbiased as a matter of 16S content. In-Silico capture not being biased by mismatches as a real PCR would be, the captured subsets are probably more diverse than real amplicons would be and therefore constitute a superseed of the in-vitro truth.
+We emit the hypothesis that the gDNA sequencing done on the Zymo standard is unbiased as a matter of 16S content. 
 
-This experiments provides evidence for the primer bias introduced by the different 16S pairs and suggests that 16S screening should be thought more carefully when the results differ (see table at the bottom of this page)
+In-Silico capture is not biased by primer mismatches as a real PCR would be, the captured subsets are therefore probably more diverse than real amplicons would be and should constitute a superseed of the in-vitro truth. 
+
+Taken together, this experiments could provide evidence for primer biases introduced by the different 16S pairs and may suggest that 16S screening as it is currently done by ONT should be thought more carefully when considering the Genus results obtaed by differen truns shown here.
+
+The next figure represents the 16s region with variable domains as dark blocks, spaced by more conserved regions.
 
 [![16S_regions](pictures/16S_regions.png)](https://teachthemicrobiome.weebly.com/sequencing-the-microbiome.html)
 
-The extracted reads were submitted to the ONT [16S Epi2Me pipeline](https://nanoporetech.com/nanopore-sequencing-data-analysis) to be classified and allow direct comparison of the two amplicon options at different levels.
+## Method
+
+The extracted read sets were submitted to the ONT [16S Epi2Me pipeline](https://nanoporetech.com/nanopore-sequencing-data-analysis) to be classified and allow direct comparison of the two amplicon options at different levels (only Genus is shown but the full data is provided in the 'results' folder).
 
 ## Results
 
@@ -44,6 +50,9 @@ The extracted reads were submitted to the ONT [16S Epi2Me pipeline](https://nano
  ![515FB-U1492Rw_genus](pictures/515FB-U1492Rw_reads.png)
 
  ![515FB-U1492Rw_genus](pictures/515FB-U1492Rw_genus.png)
+
+## Comparing the results
+
 
 ## References
 <b id="f1">1</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a1)

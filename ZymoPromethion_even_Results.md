@@ -6,8 +6,6 @@ We emit the hypothesis that the gDNA sequencing done on the Zymo standard is unb
 
 In-Silico capture is not biased by primer mismatches as a real PCR would be, the captured subsets are therefore probably more diverse than real amplicons would be and should constitute a superseed of the in-vitro truth. 
 
-Taken together, this experiments could provide evidence for primer biases introduced by the different 16S pairs and may suggest that 16S screening as it is currently done by ONT should be thought more carefully when considering the Genus results obtained in the different runs shown here.
-
 The next figure represents the 16s region with variable domains as dark blocks, spaced by more conserved regions.
 
 [![16S_regions](pictures/16S_regions.png)](https://teachthemicrobiome.weebly.com/sequencing-the-microbiome.html)

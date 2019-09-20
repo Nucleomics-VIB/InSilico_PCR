@@ -32,14 +32,14 @@ The extracted reads were submitted to the ONT [16S Epi2Me pipeline](https://nano
 
 ### **515FB-U1492R** in-silico amplicon
 
-* Epi2ME **genus** results for the **515FB-U1492R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/XXXXX)
+* Epi2ME **genus** results for the **515FB-U1492R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214514)
    * 515FB: "GTGYCAGCMGCCGCGGTAA"
-   * 805R: "GACTACHVGGGTATCTAATCC"
-   * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/515FB-U1492R_XXXXXX_classification_16s_barcode-v1.csv)
+   * U1492Rw: "CGGTWACCTTGTTACGACTT"
+   * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/515FB-U1492Rw_214514_classification_16s_barcode-v1.csv)
 
- ![515FB-U1492R_genus](pictures/515FB-U1492R_reads.png)
+ ![515FB-U1492Rw_genus](pictures/515FB-U1492Rw_reads.png)
 
- ![515FB-U1492R_genus](pictures/515FB-U1492R_genus.png)
+ ![515FB-U1492Rw_genus](pictures/515FB-U1492Rw_genus.png)
 
 ## References
 <b id="f1">1</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a1)

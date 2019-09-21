@@ -32,7 +32,7 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 * Epi2ME **genus** results for the **337F-805R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214508)
    * 337F: "GACTCCTACGGGAGGCWGCAG"
    * 805R: "GACTACHVGGGTATCTAATCC"
-   * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/337F-805R_214508_classification_16s_barcode-v1.csv)
+   * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/337F-805R_214508_classification_16s_barcode-v1.csv.zip)
 
  ![337F-805R_reads](pictures/337F-805R_reads.png)
 
@@ -43,7 +43,7 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 * Epi2ME **genus** results for the **515FB-U1492Rw** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214579)
    * 515FB: "GTGYCAGCMGCCGCGGTAA"
    * U1492Rw: "CGGTWACCTTGTTACGACTT"
-   * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/515FB-U1492Rw_214514_classification_16s_barcode-v1.csv)
+   * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/515FB-U1492Rw_214579_classification_16s_barcode-v1.csv.zip)
 
  ![515FB_1492Rw_reads](pictures/515FB_1492Rw_reads.png)
 

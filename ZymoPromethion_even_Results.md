@@ -72,7 +72,8 @@ The expected composition (%) obtained from the Zymo documentation is as follows:
 
 The species-level results for the three analyses are:
 
-|---|-27F-U1492R--------------|---N---|-PC-|-337F-805R---------------|---N---|-PC-|-515FB_1492Rw------------|---N---|-PC-|
+|   | 27F-U1492R              |   N   | PC | 337F-805R               |   N   | PC | 515FB_1492Rw            |   N   | PC |
+|---|-------------------------|-------|----|-------------------------|-------|----|-------------------------|-------|----|
 | * | Lactobacillus fermentum |  7994 | 15 | Bacillus mojavensis     | 24310 | 25 | Bacillus subtilis       |  8620 | 16 |
 | ~ | Listeria welshimeri     |  7775 | 15 | Listeria welshimeri     | 15619 | 16 | Lactobacillus fermentum |  8596 | 16 |
 | * | Bacillus subtilis       |  6086 | 12 | Lactobacillus fermentum | 15450 | 16 | Bacillus mojavensis     |  6568 | 12 |

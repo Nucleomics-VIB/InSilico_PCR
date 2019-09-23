@@ -1,6 +1,7 @@
 ## Summary
 
-In this short white papaer we used ONT data obtained from the **ZymoBIOMICS™ Microbial Community Standard** <sup id="a1">[1](#f1)</sup> The gDNA **Zymo-PromethION-EVEN-BB-SN** reads data from the **[Nanopore GridION and PromethION Mock Microbial Community Data Community Release](https://github.com/LomanLab/mockcommunity)**<sup id="a2">[2](#f2)</sup> was used as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a3">[3](#f3)</sup>, the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a3">[3](#f3)</sup>, or a 'universal' amplicon corresponding to the combination **515FB-U1492Rw** <sup id="a3">[3](#f3)</sup>.
+In this short white papaer we used ONT data obtained from the **ZymoBIOMICS™ Microbial Community Standard** <sup id="a1">[1](#f1)</sup>.<br>
+The gDNA **Zymo-PromethION-EVEN-BB-SN** reads data from the **[Nanopore GridION and PromethION Mock Microbial Community Data Community Release](https://github.com/LomanLab/mockcommunity)**<sup id="a2">[2](#f2)</sup> was used as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a3">[3](#f3)</sup>, the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a3">[3](#f3)</sup>, or a 'universal' amplicon corresponding to the combination **515FB-U1492Rw** <sup id="a3">[3](#f3)</sup>.
 
 We emit the hypothesis that the gDNA sequencing done on the Zymo standard is unbiased as a matter of 16S content. 
 

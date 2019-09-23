@@ -22,7 +22,7 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 
 ## Results
 
-### **27F-U1492R** in-silico amplicon (1.4kb)
+### **27F-U1492R** in-silico amplicon (~1.4kb)
 
 * Epi2ME **genus** results for the **27F-U1492R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214013?token=E2EC0ED6-D91D-11E9-8C06-8D18643BF1F3)
    * 27F: "AGAGTTTGATCMTGGCTCAG"
@@ -33,7 +33,7 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 
  ![27F-U1492R_genus](pictures/27F-U1492R_genus.png)
 
-### **337F-805R** in-silico amplicon
+### **337F-805R** in-silico amplicon (~400bps)
 
 * Epi2ME **genus** results for the **337F-805R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214508?token=B58DA58A-DB93-11E9-8763-E0CFBA8D1717)
    * 337F: "GACTCCTACGGGAGGCWGCAG"
@@ -44,7 +44,7 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 
  ![337F-805R_genus](pictures/337F-805R_genus.png)
 
-### **515FB-U1492Rw** in-silico amplicon
+### **515FB-U1492Rw** in-silico amplicon (~bps)
 
 * Epi2ME **genus** results for the **515FB-U1492Rw** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214579?token=F654DE94-DC5B-11E9-A3B0-9C43BB8D1717)
    * 515FB: "GTGYCAGCMGCCGCGGTAA"

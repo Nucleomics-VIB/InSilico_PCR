@@ -20,7 +20,7 @@ The motivation behind this analysis was to simulate 16S long amplicon sequencing
 
 ## method
 
-The method used to extract sequences between primers was developed by Brian Bushnell and explained [here](https://www.biostars.org/p/216039/#216054)
+The method used to extract sequences between primers was developed by Brian Bushnell based on his [BBMap tools](https://jgi.doe.gov/data-and-tools/bbtools/) and is explained [here](https://www.biostars.org/p/216039/#216054)
 
 * Install the required software using conca or manually based on the list provided in **environment.yaml**. Also get the data from one of the links above.
 * Set names and numeric limits in the top of the **InSilico_PCR.sh** script (adjust the number of threads to the available cores in your own machine)

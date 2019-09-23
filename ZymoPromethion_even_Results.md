@@ -55,47 +55,41 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 
 ## Comparing the results
 
-The expected composition (%) obtained from the Zymo documentation is as follows:
+The expected composition (%) obtained from the Zymo documentation and our results are as follows (sorted alphabetically and two yeast genomes removed):
 
-| Genus          | species       | genomic_DNA     | 16S  | 16S-18S | genome_copy | cell_number |
-|----------------|---------------|-----------------|------|---------|-------------|-------------|
-| Pseudomonas    | aeruginosa    | 12              | 4.2  | 3.6     | 6.1         | 6.1         |
-| Escherichia    | coli          | 12              | 10.1 | 8.9     | 8.5         | 8.5         |
-| Salmonella     | enterica      | 12              | 10.4 | 9.1     | 8.7         | 8.8         |
-| Lactobacillus  | fermentum     | 12              | 18.4 | 16.1    | 21.6        | 21.9        |
-| Enterococcus   | faecalis      | 12              | 9.9  | 8.7     | 14.6        | 14.6        |
-| Staphylococcus | aureus        | 12              | 15.5 | 13.6    | 15.2        | 15.3        |
-| Listeria       | monocytogenes | 12              | 14.1 | 12.4    | 13.9        | 13.9        |
-| Bacillus       | subtilis      | 12              | 17.4 | 15.3    | 10.3        | 10.3        |
-| Saccharomyces  | cerevisiae    | 2               | NA   | 9.3     | 0.57        | 0.29        |
-| Cryptococcus   | neoformans    | 2               | NA   | 3.3     | 0.37        | 0.18        |
+| species                 |  Zymo | 27F-U1492R | 337F-805R | 515FB_1492Rw |
+|-------------------------|:-----:|:----------:|:---------:|:------------:|
+| Bacillus halotolerans   |   .   |    8,4%    |    1,8%   |     5,2%     |
+| Bacillus mojavensis     |   .   |    10,1%   |   24,9%   |     12,0%    |
+| Bacillus subtilis       | 17,4% |    11,6%   |    2,1%   |     15,7%    |
+| Bacillus vallismortis   |   .   |    2,9%    |     .     |     3,2%     |
+| Enterococcus faecalis   |  9,9% |    10,6%   |   11,2%   |     9,6%     |
+| Escherichia coli        | 10,1% |     .      |    1,1%   |      .       |
+| Escherichia fergusonii  |   .   |     .      |    1,8%   |      .       |
+| Lactobacillus fermentum | 18,4% |    15,3%   |   15,8%   |     15,7%    |
+| Lactobacillus gastricus |   .   |    1,7%    |     .     |      .       |
+| Lactobacillus suebicus  |   .   |     .      |     .     |     3,1%     |
+| Listeria innocua        |   .   |    2,7%    |     .     |     10,7%    |
+| Listeria monocytogenes  | 14,1% |     .      |     .     |      .       |
+| Listeria welshimeri     |   .   |    14,9%   |     .     |     5,4%     |
+| Listeria welshimeri     |   .   |     .      |   16,0%   |      .       |
+| Pseudomonas aeruginosa  |  4,2% |    5,6%    |    4,1%   |     4,5%     |
+| Salmonella enterica     | 10,4% |    5,2%    |    6,5%   |     7,2%     |
+| Staphylococcus aureus   | 15,5% |    10,9%   |   13,9%   |     7,7%     |
+| Staphylococcus petrasii |   .   |     .      |    0,9%   |      .       |
 
-The species-level results for the three analyses are:
-
-|   | 27F-U1492R              |   N   | PC | 337F-805R               |   N   | PC | 515FB_1492Rw            |   N   | PC |
-|---|-------------------------|-------|----|-------------------------|-------|----|-------------------------|-------|----|
-| * | Lactobacillus fermentum |  7994 | 15 | Bacillus mojavensis     | 24310 | 25 | Bacillus subtilis       |  8620 | 16 |
-| ~ | Listeria welshimeri     |  7775 | 15 | Listeria welshimeri     | 15619 | 16 | Lactobacillus fermentum |  8596 | 16 |
-| * | Bacillus subtilis       |  6086 | 12 | Lactobacillus fermentum | 15450 | 16 | Bacillus mojavensis     |  6568 | 12 |
-| * | Staphylococcus aureus   |  5697 | 11 | Staphylococcus aureus   | 13546 | 14 | Listeria innocua        |  5893 | 11 |
-| * | Enterococcus faecalis   |  5537 | 11 | Enterococcus faecalis   | 10941 | 11 | Enterococcus faecalis   |  5271 | 10 |
-| ~ | Bacillus mojavensis     |  5302 | 10 | Salmonella enterica     |  6403 |  7 | Staphylococcus aureus   |  4234 |  8 |
-| ~ | Bacillus halotolerans   |  4396 |  8 | Pseudomonas aeruginosa  |  3994 |  4 | Salmonella enterica     |  3921 |  7 |
-| * | Pseudomonas aeruginosa  |  2951 |  6 | Bacillus subtilis       |  2066 |  2 | Listeria welshimeri     |  2964 |  5 |
-| * | Salmonella enterica     |  2717 |  5 | Escherichia fergusonii  |  1764 |  2 | Bacillus halotolerans   |  2835 |  5 |
-| ~ | Bacillus vallismortis   |  1522 |  3 | Bacillus halotolerans   |  1759 |  2 | Pseudomonas aeruginosa  |  2477 |  5 |
-| . | Listeria innocua        |  1437 |  3 | Escherichia coli        |  1077 |  1 | Bacillus vallismortis   |  1748 |  3 |
-| . | Lactobacillus gastricus |   869 |  2 | Staphylococcus petrasii |   852 |  1 | Lactobacillus suebicus  |  1709 |  3 |
-
-('*': match, '~': partial match, '.' absent)
+('.' absent)
 
 ## Discussion
 
 Results obtained with this public data show that the ONT analysis pipeline is relatively robust when comparing three PCR amplicons and returns quasi identical classification at species level.
 
-However, the final composition of the Zymo community does not match the expected relative abundance of the 8 species spiked into the commercial sample with as striking difference, the absence of Escherichia coli (except in the 337F-805R amplicon results). Another Genus: Bacillus is represented by three separate species (subtilis, mojavensis, halotolerans) in the data while only expected as the single species subtilis from the Zymo documentation.
+The final composition of the Zymo community does not fully match the expected relative abundance of the 8 species spiked into the commercial sample.
 
-Although we cannot exclude that the classification may be biased by high degree of sequence identity between these species, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by the group which shared thez ONT data.
+* Escherichia coli is absent from the analysis results, except in the 337F-805R results.
+* Bacillus is represented by three separate species (subtilis, mojavensis, halotolerans) in the data while only expected as the single species 'subtilis' from the Zymo documentation.
+
+Although we cannot exclude that the classification may be biased by high degree of sequence identity between these species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by the group which shared thez ONT data.
 
 This analysis suggests that the 16 pipeline is able to correctly classify the relatively simple Zymo community but may be biased in some ways and could make wrong assessments when working with more complex communities.
 

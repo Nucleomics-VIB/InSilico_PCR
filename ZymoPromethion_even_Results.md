@@ -55,6 +55,40 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 
 ## Comparing the results
 
+The expected dustribution obtained from teh Zymo page is as follows
+
+| Zymo Standard  |                            composition (%)                                   |
+|----------------|---------------|-----------------|------|---------|-------------|-------------|
+| Genus          | species       | genomic_DNA     | 16S  | 16S-18S | genome_copy | cell_number |
+| Pseudomonas    | aeruginosa    | 12              | 4.2  | 3.6     | 6.1         | 6.1         |
+| Escherichia    | coli          | 12              | 10.1 | 8.9     | 8.5         | 8.5         |
+| Salmonella     | enterica      | 12              | 10.4 | 9.1     | 8.7         | 8.8         |
+| Lactobacillus  | fermentum     | 12              | 18.4 | 16.1    | 21.6        | 21.9        |
+| Enterococcus   | faecalis      | 12              | 9.9  | 8.7     | 14.6        | 14.6        |
+| Staphylococcus | aureus        | 12              | 15.5 | 13.6    | 15.2        | 15.3        |
+| Listeria       | monocytogenes | 12              | 14.1 | 12.4    | 13.9        | 13.9        |
+| Bacillus       | subtilis      | 12              | 17.4 | 15.3    | 10.3        | 10.3        |
+| Saccharomyces  | cerevisiae    | 2               | NA   | 9.3     | 0.57        | 0.29        |
+| Cryptococcus   | neoformans    | 2               | NA   | 3.3     | 0.37        | 0.18        |
+
+The specied-level results for the three analyses are:
+
+|   | 27F-U1492R                           | 337F-805R                                 | 515FB_1492Rw                             |
+|---|--------------------------------------|-------------------------------------------|------------------------------------------|
+| * | Lactobacillus fermentum | 7994 | 15% |   | Bacillus mojavensis     | 24310 | 25% |   | Bacillus subtilis       | 8620 | 16% |
+| ~ | Listeria welshimeri     | 7775 | 15% |   | Listeria welshimeri     | 15619 | 16% |   | Lactobacillus fermentum | 8596 | 16% |
+| * | Bacillus subtilis       | 6086 | 12% |   | Lactobacillus fermentum | 15450 | 16% |   | Bacillus mojavensis     | 6568 | 12% |
+| * | Staphylococcus aureus   | 5697 | 11% |   | Staphylococcus aureus   | 13546 | 14% |   | Listeria innocua        | 5893 | 11% |
+| * | Enterococcus faecalis   | 5537 | 11% |   | Enterococcus faecalis   | 10941 | 11% |   | Enterococcus faecalis   | 5271 | 10% |
+| ~ | Bacillus mojavensis     | 5302 | 10% |   | Salmonella enterica     | 6403  | 7%  |   | Staphylococcus aureus   | 4234 | 8%  |
+| ~ | Bacillus halotolerans   | 4396 | 8%  |   | Pseudomonas aeruginosa  | 3994  | 4%  |   | Salmonella enterica     | 3921 | 7%  |
+| * | Pseudomonas aeruginosa  | 2951 | 6%  |   | Bacillus subtilis       | 2066  | 2%  |   | Listeria welshimeri     | 2964 | 5%  |
+| * | Salmonella enterica     | 2717 | 5%  |   | Escherichia fergusonii  | 1764  | 2%  |   | Bacillus halotolerans   | 2835 | 5%  |
+| ~ | Bacillus vallismortis   | 1522 | 3%  |   | Bacillus halotolerans   | 1759  | 2%  |   | Pseudomonas aeruginosa  | 2477 | 5%  |
+| . | Listeria innocua        | 1437 | 3%  |   | Escherichia coli        | 1077  | 1%  |   | Bacillus vallismortis   | 1748 | 3%  |
+| . | Lactobacillus gastricus | 869  | 2%  |   | Staphylococcus petrasii | 852   | 1%  |   | Lactobacillus suebicus  | 1709 | 3%  |
+
+('*': match, '~': partial match, '.' absent)
 
 ## References
 

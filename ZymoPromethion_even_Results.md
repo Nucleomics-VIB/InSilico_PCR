@@ -6,7 +6,7 @@ In this short white papaer we used ONT data obtained from the **ZymoBIOMICS™ M
 
 The corresponding Oxford nanopore gDNA reads data **Zymo-PromethION-EVEN-BB-SN** was obtained from the **[Nanopore GridION and PromethION Mock Microbial Community Data Community Release](https://github.com/LomanLab/mockcommunity)**<sup id="a2">[2](#f2)</sup> and used as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a3">[3](#f3)</sup>, the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a3">[3](#f3)</sup>, or a 'universal' amplicon corresponding to the combination **515FB-U1492Rw** <sup id="a3">[3](#f3)</sup>.
 
-We emit the hypothesis that the gDNA sequencing done on the Zymo standard is unbiased as a matter of 16S content adn therefore represents the ideal material to assess the efficiency and specificity of the ONT 16S analysis pipeline. 
+We emit the hypothesis that the gDNA sequencing done on the Zymo standard is unbiased as a matter of 16S content and therefore represents the ideal material to assess the efficiency and specificity of the ONT 16S analysis pipeline. 
 
 In-Silico capture is not biased by primer mismatches as a real PCR would be, the captured subsets are therefore probably more diverse than real amplicons would be and should constitute a superseed of the in-vitro truth. 
 
@@ -22,7 +22,7 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 
 ### **27F-U1492R** in-silico amplicon
 
-* Epi2ME **genus** results for the **27F-U1492R** in-silico amplicon: [(link)](My latest @metrichor #epi2me run report: https://epi2me.nanoporetech.com/workflow_instance/214013?token=E2EC0ED6-D91D-11E9-8C06-8D18643BF1F3)
+* Epi2ME **genus** results for the **27F-U1492R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214013?token=E2EC0ED6-D91D-11E9-8C06-8D18643BF1F3)
    * 27F: "AGAGTTTGATCMTGGCTCAG"
    * 1492Rw: "CGGTWACCTTGTTACGACTT"
    * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/27F-U1492R_214013_classification_16s_barcode-v1.csv)

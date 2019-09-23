@@ -22,7 +22,7 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 
 ## Results
 
-### **27F-U1492R** in-silico amplicon
+### **27F-U1492R** in-silico amplicon (1.4kb)
 
 * Epi2ME **genus** results for the **27F-U1492R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214013?token=E2EC0ED6-D91D-11E9-8C06-8D18643BF1F3)
    * 27F: "AGAGTTTGATCMTGGCTCAG"

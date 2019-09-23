@@ -91,7 +91,7 @@ The final composition of the Zymo community does not fully match the expected re
 * Escherichia coli is absent from the analysis results, except in the 337F-805R results.
 * Bacillus is represented by four separate species (subtilis, mojavensis, halotolerans, vallismortis) in the data while only expected as the single species 'subtilis' from the Zymo documentation.
 
-Although we cannot exclude that the classification may be biased by high degree of sequence identity between these species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by Sze et al <sup id="a5">[5](#f5)</sup>.
+Although we cannot exclude that the classification may be biased by high degree of sequence identity between these species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by Sze & Schloss <sup id="a5">[5](#f5)</sup>.
 
 This analysis suggests that the 16 pipeline is able to correctly classify the relatively simple Zymo community but may be biased in some ways and could make wrong assessments when working with more complex communities.
 
@@ -107,4 +107,4 @@ This analysis suggests that the 16 pipeline is able to correctly classify the re
 
 <b id="f5">5</b> The impact of DNA polymerase and number of
 rounds of amplification in PCR on 16S rRNA
-gene sequence data [link](https://www.biorxiv.org/content/10.1101/565598v2). [↩](#a4)
+gene sequence data. Marc A Sze & Patrick D Schloss [link](https://www.biorxiv.org/content/10.1101/565598v2). [↩](#a4)

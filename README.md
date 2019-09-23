@@ -24,9 +24,10 @@ The data used here is not ours but was obtained from the **https://github.com/Lo
 
 The method used to extract sequences between primers was developed by Brian Bushnell and explained [here](https://www.biostars.org/p/216039/#216054)
 
-NOTE: Please set names and numeric limits in the top of the script (adjust the number of threads to the available cores in your own machine)
+NOTE: Install the required software using conca or manually based on teh list provided in **environment.yaml**
+NOTE: Please set names and numeric limits in the top of the **InSilico_PCR.sh** script (adjust the number of threads to the available cores in your own machine) then run the script on your server. 
 
-The workwlof is as follows:
+The workflow is as follows:
 
 * split the data in small chunks for speed-up using parallel
 * search forward primer in all chunks using BBMap msa.sh

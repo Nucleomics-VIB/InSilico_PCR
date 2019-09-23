@@ -36,6 +36,10 @@ The workflow is as follows:
 * extract 'matching' regions using BBMAp cutprimers.sh 
 * merge all results and keep only regions larger than a certain size (by default excluding the 1% shortest sequences unless the cutoff value 'filterperc' is changed)
 
+## results
+
+The results of a typical experiment asre presented **[here](ZymoPromethion_even_Results.md)**
+
 ## future plans
 
 This code should and will be changed to a **snakemake** pipeline in order to be more portable. The config.yaml file is the first step towards this transition.

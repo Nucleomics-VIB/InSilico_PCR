@@ -2,6 +2,7 @@ name: InSilico_PCR
 channels:
   - defaults
   - bioconda
+  - r
 dependencies:
   - git
   - git-lfs
@@ -11,3 +12,4 @@ dependencies:
   - bbmap
   - pigz
   - pip
+  - r-essentials

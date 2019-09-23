@@ -89,6 +89,16 @@ The species-level results for the three analyses are:
 
 ('*': match, '~': partial match, '.' absent)
 
+## Discussion
+
+Results obtained with this public data show that the ONT analysis pipeline is relatively robust when comparing three PCR amplicons and returns quasi identical classification at species level.
+
+However, the final composition of the Zymo community does not match the expected relative abundance of the 8 species spiked into the commercial sample with as striking difference, the absence of Escherichia coli (except in the 337F-805R amplicon results). Another Genus: Bacillus is represented by three separate species (subtilis, mojavensis, halotolerans) in the data while only expected as the single species subtilis from the Zymo documentation.
+
+Although we cannot exclude that the classification may be biased by high degree of sequence identity between these species, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by the group which shared thez ONT data.
+
+This analysis suggests that the 16 pipeline is able to correctly classify the relatively simple Zymo community but may be biased in some ways and could make wrong assessments when working with more complex communities.
+
 ## References
 
 <b id="f1">1</b> ZymoBIOMICS™ Microbial Community Standard (Catalog No. D6300) [link](https://files.zymoresearch.com/protocols/_d6300_zymobiomics_microbial_community_standard.pdf) [↩](#a1)

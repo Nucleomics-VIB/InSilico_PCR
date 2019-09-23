@@ -38,7 +38,7 @@ The workflow is as follows:
 
 The results of a 16S In-Silico PCR experiment are presented **[here](ZymoPromethion_even_Results.md)**.
 
-## Fture plans
+## Future plans
 
 This code should and will be changed to a **snakemake** pipeline in order to be more portable. The config.yaml file is the first step towards this transition.
 

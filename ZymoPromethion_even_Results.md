@@ -44,7 +44,7 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 
  ![337F-805R_genus](pictures/337F-805R_genus.png)
 
-### **515FB-U1492Rw** in-silico amplicon (~bps)
+### **515FB-U1492Rw** in-silico amplicon (~850bps)
 
 * Epi2ME **genus** results for the **515FB-U1492Rw** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214579?token=F654DE94-DC5B-11E9-A3B0-9C43BB8D1717)
    * 515FB: "GTGYCAGCMGCCGCGGTAA"

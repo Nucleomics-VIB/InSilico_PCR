@@ -15,11 +15,11 @@ reversep:"CGGTWACCTTGTTACGACTT"
 split="split_data"
 tmpout="bbmap_out"
 
-# split data in 500k read bins
+# split data in 500k read bins (500000x4=2000000)
 lines:2000000
 
 # threads for parallel tasks
-thr:48
+thr:80
 
 # threads for compression
 pigt:8
@@ -30,5 +30,5 @@ mem:"8g"
 # stringent primer finding to avoid noisy reads
 cut:0.8
 
-# minimum expected amplicon length for final filtering and merging
-minl:1000
+# exclude the 1% shortest reads, change to 0 to disable filtering
+filterperc=0.01

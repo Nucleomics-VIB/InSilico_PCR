@@ -18,7 +18,7 @@ The motivation behind this analysis was to simulate 16S long amplicon sequencing
 |Zymo-GridION-LOG-BB-SN|3.7|16|[fastq.gz](https://nanopore.s3.climb.ac.uk/Zymo-GridION-LOG-BB-SN.fq.gz)|[48h run](https://nanopore.s3.climb.ac.uk/Zymo-GridION-LOG-BB-SN_basecalled.tgz)|n/a|[signal.tar](https://nanopore.s3.climb.ac.uk/Zymo-GridION-LOG-BB-SN_signal.tar)|
 |Zymo-GridION-EVEN-BB-SN|3.5|14|[fastq.gz](https://nanopore.s3.climb.ac.uk/Zymo-GridION-EVEN-BB-SN.fq.gz)|[48h run](https://nanopore.s3.climb.ac.uk/Zymo-GridION-EVEN-BB-SN_basecalled.tgz)|n/a|[signal.tar](https://nanopore.s3.climb.ac.uk/Zymo-GridION-EVEN-BB-SN_signal.tar)|
 
-## method
+## Method
 
 The method used to extract sequences between primers was developed by Brian Bushnell based on his [BBMap tools](https://jgi.doe.gov/data-and-tools/bbtools/) and is explained [here](https://www.biostars.org/p/216039/#216054).
 
@@ -34,11 +34,11 @@ The workflow is as follows:
 * extract 'matching' regions using BBMAp cutprimers.sh 
 * merge all results and keep only regions larger than a certain size (by default excluding the 1% shortest sequences unless the cutoff value 'filterperc' is changed)
 
-## results
+## Results
 
 The results of a 16S In-Silico PCR experiment are presented **[here](ZymoPromethion_even_Results.md)**.
 
-## future plans
+## Fture plans
 
 This code should and will be changed to a **snakemake** pipeline in order to be more portable. The config.yaml file is the first step towards this transition.
 

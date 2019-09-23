@@ -6,7 +6,7 @@
 # script: InSilico_PCR.sh
 # Stephane Plaisance VIB-NC September-18-2019 v1.0
 # conda with -f environment imported
-# requires: bbmap, bioawk R (computing percentiles)
+# requires: bbmap, bioawk, R (computing percentiles)
 #
 # visit our Git: https://github.com/Nucleomics-VIB
 

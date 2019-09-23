@@ -61,24 +61,24 @@ The expected composition (%) obtained from the Zymo documentation and our result
 |-------------------------|:-----:|:----------:|:---------:|:------------:|
 | Bacillus halotolerans   |   .   |    8,4%    |    1,8%   |     5,2%     |
 | Bacillus mojavensis     |   .   |    10,1%   |   24,9%   |     12,0%    |
-| Bacillus subtilis       | 17,4% |    11,6%   |    2,1%   |     15,7%    |
+| Bacillus subtilis       | 17,4% |    11,6%   |    2,1%   |     **15,7%**    |
 | Bacillus vallismortis   |   .   |    2,9%    |     .     |     3,2%     |
-| Enterococcus faecalis   |  9,9% |    10,6%   |   11,2%   |     9,6%     |
+| Enterococcus faecalis   |  9,9% |    10,6%   |   11,2%   |     **9,6%**     |
 | Escherichia coli        | 10,1% |     .      |    1,1%   |      .       |
 | Escherichia fergusonii  |   .   |     .      |    1,8%   |      .       |
-| Lactobacillus fermentum | 18,4% |    15,3%   |   15,8%   |     15,7%    |
+| Lactobacillus fermentum | 18,4% |    15,3%   |   **15,8%**   |     15,7%    |
 | Lactobacillus gastricus |   .   |    1,7%    |     .     |      .       |
 | Lactobacillus suebicus  |   .   |     .      |     .     |     3,1%     |
-| Listeria innocua        |   .   |    2,7%    |     .     |     10,7%    |
+| Listeria innocua        |   .   |    2,7%    |     .     |     **10,7%**    |
 | Listeria monocytogenes  | 14,1% |     .      |     .     |      .       |
-| Listeria welshimeri     |   .   |    14,9%   |     .     |     5,4%     |
+| Listeria welshimeri     |   .   |    14,9%   |     .     |     **5,4%**     |
 | Listeria welshimeri     |   .   |     .      |   16,0%   |      .       |
-| Pseudomonas aeruginosa  |  4,2% |    5,6%    |    4,1%   |     4,5%     |
-| Salmonella enterica     | 10,4% |    5,2%    |    6,5%   |     7,2%     |
-| Staphylococcus aureus   | 15,5% |    10,9%   |   13,9%   |     7,7%     |
-| Staphylococcus petrasii |   .   |     .      |    0,9%   |      .       |
+| Pseudomonas aeruginosa  |  4,2% |    5,6%    |    **4,1%**   |     4,5%     |
+| Salmonella enterica     | 10,4% |    5,2%    |    6,5%   |     **7,2%**     |
+| Staphylococcus aureus   | 15,5% |    10,9%   |   **13,9%**   |     7,7%     |
+| Staphylococcus petrasii |   .   |     .      |    **0,9%**   |      .       |
 
-('.' absent)
+('.' absent; in bold, the closest hit from the anaysis)
 
 ## Discussion
 

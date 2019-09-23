@@ -70,9 +70,9 @@ The expected composition (%) obtained from the Zymo documentation is as follows:
 | Saccharomyces  | cerevisiae    | 2               | NA   | 9.3     | 0.57        | 0.29        |
 | Cryptococcus   | neoformans    | 2               | NA   | 3.3     | 0.37        | 0.18        |
 
-The specied-level results for the three analyses are:
+The species-level results for the three analyses are:
 
-|   | 27F-U1492R                           | 337F-805R                             | 515FB_1492Rw                         |
+| - | 27F-U1492R                           | 337F-805R                             | 515FB_1492Rw                         |
 |---|--------------------------------------|---------------------------------------|--------------------------------------|
 | * | Lactobacillus fermentum | 7994 | 15% | Bacillus mojavensis     | 24310 | 25% | Bacillus subtilis       | 8620 | 16% |
 | ~ | Listeria welshimeri     | 7775 | 15% | Listeria welshimeri     | 15619 | 16% | Lactobacillus fermentum | 8596 | 16% |

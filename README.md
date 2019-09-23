@@ -34,7 +34,7 @@ The workflow is as follows:
 * search forward primer in all chunks using BBMap msa.sh
 * search reverse primer in all chunks using BBMap msa.sh
 * extract 'matching' regions using BBMAp cutprimers.sh 
-* merge all results and keep only regions larger than a certain size (by default excluding the 1% shortest sequences unless the cutoff value is changed)
+* merge all results and keep only regions larger than a certain size (by default excluding the 1% shortest sequences unless the cutoff value 'filterperc' is changed)
 
 ## future plans
 

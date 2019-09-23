@@ -36,7 +36,7 @@ The workflow is as follows:
 
 ## results
 
-The results of a typical experiment are presented **[here](ZymoPromethion_even_Results.md)**
+The results of a 16S In-Silico PCR experiment are presented **[here](ZymoPromethion_even_Results.md)**.
 
 ## future plans
 

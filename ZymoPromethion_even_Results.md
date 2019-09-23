@@ -64,8 +64,8 @@ The expected composition (%) obtained from the Zymo documentation and our result
 | Bacillus subtilis       | 17,4% |    11,6%   |    2,1%   |     **15,7%**    |
 | Bacillus vallismortis   |   .   |    2,9%    |     .     |     3,2%     |
 | Enterococcus faecalis   |  9,9% |    10,6%   |   11,2%   |     **9,6%**     |
-| Escherichia coli        | 10,1% |     .      |    1,1%   |      .       |
-| Escherichia fergusonii  |   .   |     .      |    1,8%   |      .       |
+| Escherichia coli        | 10,1% |     .      |    **1,1%**   |      .       |
+| Escherichia fergusonii  |   .   |     .      |    **1,8%**   |      .       |
 | Lactobacillus fermentum | 18,4% |    15,3%   |   **15,8%**   |     15,7%    |
 | Lactobacillus gastricus |   .   |    1,7%    |     .     |      .       |
 | Lactobacillus suebicus  |   .   |     .      |     .     |     3,1%     |

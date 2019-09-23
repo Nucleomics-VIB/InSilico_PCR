@@ -22,7 +22,7 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 
 ### **27F-U1492R** in-silico amplicon
 
-* Epi2ME **genus** results for the **27F-U1492R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214013)
+* Epi2ME **genus** results for the **27F-U1492R** in-silico amplicon: [(link)](My latest @metrichor #epi2me run report: https://epi2me.nanoporetech.com/workflow_instance/214013?token=E2EC0ED6-D91D-11E9-8C06-8D18643BF1F3)
    * 27F: "AGAGTTTGATCMTGGCTCAG"
    * 1492Rw: "CGGTWACCTTGTTACGACTT"
    * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/27F-U1492R_214013_classification_16s_barcode-v1.csv)
@@ -33,7 +33,7 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 
 ### **337F-805R** in-silico amplicon
 
-* Epi2ME **genus** results for the **337F-805R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214508)
+* Epi2ME **genus** results for the **337F-805R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214508?token=B58DA58A-DB93-11E9-8763-E0CFBA8D1717)
    * 337F: "GACTCCTACGGGAGGCWGCAG"
    * 805R: "GACTACHVGGGTATCTAATCC"
    * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/337F-805R_214508_classification_16s_barcode-v1.csv.zip)
@@ -44,7 +44,7 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 
 ### **515FB-U1492Rw** in-silico amplicon
 
-* Epi2ME **genus** results for the **515FB-U1492Rw** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214579)
+* Epi2ME **genus** results for the **515FB-U1492Rw** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214579?token=F654DE94-DC5B-11E9-A3B0-9C43BB8D1717)
    * 515FB: "GTGYCAGCMGCCGCGGTAA"
    * U1492Rw: "CGGTWACCTTGTTACGACTT"
    * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/515FB-U1492Rw_214579_classification_16s_barcode-v1.csv.zip)

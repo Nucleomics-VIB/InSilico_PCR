@@ -78,7 +78,7 @@ The expected composition (%) obtained from the Zymo documentation and our result
 | Staphylococcus aureus   | 15,5% |    10,9%   |   **13,9%**   |     7,7%     |
 | Staphylococcus petrasii |   .   |     .      |    **0,9%**   |      .       |
 
-('.' absent; in bold, the closest hit from the anaysis)
+('.' absent; in bold, the closest Genus hit(s) from the anaysis)
 
 ## Discussion
 

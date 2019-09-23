@@ -87,7 +87,7 @@ Results obtained with this public data show that the ONT analysis pipeline is re
 The final composition of the Zymo community does not fully match the expected relative abundance of the 8 species spiked into the commercial sample.
 
 * Escherichia coli is absent from the analysis results, except in the 337F-805R results.
-* Bacillus is represented by three separate species (subtilis, mojavensis, halotolerans) in the data while only expected as the single species 'subtilis' from the Zymo documentation.
+* Bacillus is represented by four separate species (subtilis, mojavensis, halotolerans, vallismortis) in the data while only expected as the single species 'subtilis' from the Zymo documentation.
 
 Although we cannot exclude that the classification may be biased by high degree of sequence identity between these species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by the group which shared thez ONT data.
 

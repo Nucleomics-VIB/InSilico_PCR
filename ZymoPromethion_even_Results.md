@@ -73,18 +73,18 @@ The expected composition (%) obtained from the Zymo documentation is as follows:
 The species-level results for the three analyses are:
 
 |---|-27F-U1492R--------------|---N---|--%--|-337F-805R---------------|--N----|--%--|-515FB_1492Rw------------|---N---|--%--|
-| * | Lactobacillus fermentum |  7994 | 15% | Bacillus mojavensis     | 24310 | 25% | Bacillus subtilis       |  8620 | 16% |
-| ~ | Listeria welshimeri     |  7775 | 15% | Listeria welshimeri     | 15619 | 16% | Lactobacillus fermentum |  8596 | 16% |
-| * | Bacillus subtilis       |  6086 | 12% | Lactobacillus fermentum | 15450 | 16% | Bacillus mojavensis     |  6568 | 12% |
-| * | Staphylococcus aureus   |  5697 | 11% | Staphylococcus aureus   | 13546 | 14% | Listeria innocua        |  5893 | 11% |
-| * | Enterococcus faecalis   |  5537 | 11% | Enterococcus faecalis   | 10941 | 11% | Enterococcus faecalis   |  5271 | 10% |
-| ~ | Bacillus mojavensis     |  5302 | 10% | Salmonella enterica     | 6403  | 7%  | Staphylococcus aureus   |  4234 | 8%  |
-| ~ | Bacillus halotolerans   |  4396 | 8%  | Pseudomonas aeruginosa  | 3994  | 4%  | Salmonella enterica     |  3921 | 7%  |
-| * | Pseudomonas aeruginosa  |  2951 | 6%  | Bacillus subtilis       | 2066  | 2%  | Listeria welshimeri     |  2964 | 5%  |
-| * | Salmonella enterica     |  2717 | 5%  | Escherichia fergusonii  | 1764  | 2%  | Bacillus halotolerans   |  2835 | 5%  |
-| ~ | Bacillus vallismortis   |  1522 | 3%  | Bacillus halotolerans   | 1759  | 2%  | Pseudomonas aeruginosa  |  2477 | 5%  |
-| . | Listeria innocua        |  1437 | 3%  | Escherichia coli        | 1077  | 1%  | Bacillus vallismortis   |  1748 | 3%  |
-| . | Lactobacillus gastricus |  869  | 2%  | Staphylococcus petrasii | 852   | 1%  | Lactobacillus suebicus  |  1709 | 3%  |
+| * | Lactobacillus fermentum |  7994 | 15\% | Bacillus mojavensis     | 24310 | 25\% | Bacillus subtilis       |  8620 | 16% |
+| ~ | Listeria welshimeri     |  7775 | 15\% | Listeria welshimeri     | 15619 | 16\% | Lactobacillus fermentum |  8596 | 16% |
+| * | Bacillus subtilis       |  6086 | 12\% | Lactobacillus fermentum | 15450 | 16\% | Bacillus mojavensis     |  6568 | 12% |
+| * | Staphylococcus aureus   |  5697 | 11\% | Staphylococcus aureus   | 13546 | 14\% | Listeria innocua        |  5893 | 11% |
+| * | Enterococcus faecalis   |  5537 | 11\% | Enterococcus faecalis   | 10941 | 11\% | Enterococcus faecalis   |  5271 | 10% |
+| ~ | Bacillus mojavensis     |  5302 | 10\% | Salmonella enterica     | 6403  | 7\%  | Staphylococcus aureus   |  4234 | 8%  |
+| ~ | Bacillus halotolerans   |  4396 | 8\%  | Pseudomonas aeruginosa  | 3994  | 4\%  | Salmonella enterica     |  3921 | 7%  |
+| * | Pseudomonas aeruginosa  |  2951 | 6\%  | Bacillus subtilis       | 2066  | 2\%  | Listeria welshimeri     |  2964 | 5%  |
+| * | Salmonella enterica     |  2717 | 5\%  | Escherichia fergusonii  | 1764  | 2\%  | Bacillus halotolerans   |  2835 | 5%  |
+| ~ | Bacillus vallismortis   |  1522 | 3\%  | Bacillus halotolerans   | 1759  | 2\%  | Pseudomonas aeruginosa  |  2477 | 5%  |
+| . | Listeria innocua        |  1437 | 3\%  | Escherichia coli        | 1077  | 1\%  | Bacillus vallismortis   |  1748 | 3%  |
+| . | Lactobacillus gastricus |  869  | 2\%  | Staphylococcus petrasii | 852   | 1\%  | Lactobacillus suebicus  |  1709 | 3%  |
 
 ('*': match, '~': partial match, '.' absent)
 

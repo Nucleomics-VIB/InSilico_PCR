@@ -16,7 +16,7 @@ The next figure represents the 16s region with variable domains as coloured bloc
 
 [![16S_regions](pictures/16S_regions_Yang.png)](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0992-y) taken from <sup id="a3b">[3b](#f3b)</sup>
 
-[![16S_regions](pictures/16S_2D.png)] taken from [theMicrobiomeViewer](http://themicrobiome.com/media/16S_viewer.cfm)
+[![16S_regions](pictures/16S_2D.png) taken from [theMicrobiomeViewer](http://themicrobiome.com/media/16S_viewer.cfm)
 
 ## Method
 

@@ -63,7 +63,7 @@ When plotting the count of classified reads in each run, we see that the quantit
 
   ![classified_reads](pictures/classified_reads.png)
 
-The expected composition (%) obtained from the Zymo documentation and our results are as follows (sorted alphabetically and two yeast genomes removed):
+The expected species composition (%) obtained from the Zymo documentation and our results are as follows (sorted alphabetically and two yeast genomes removed):
 
 | species                 |  Zymo | 27F-U1492R | 337F-805R | 515FB_1492Rw |
 |-------------------------|:-----:|:----------:|:---------:|:------------:|
@@ -86,7 +86,22 @@ The expected composition (%) obtained from the Zymo documentation and our result
 | Staphylococcus aureus   | 15,5% |    10,9%   |   **13,9%**   |     7,7%     |
 | Staphylococcus petrasii |   .   |     .      |    **0,9%**   |      .       |
 
-('.' absent; in bold, the closest Genus hit(s) from the anaysis)
+('.' absent; in bold, the closest **species** hit(s) from this anaysis)
+
+Results at **Genus** level were obtained by adding up all related species and shown next
+
+| genus          | Zymo  | 27F-U1492R | 337F-805R | 515FB_1492Rw |
+|----------------|-------|------------|-----------|--------------|
+| Bacillus       | 17,4% | 33,1%      | **28,8%**     | 36,1%        |
+| Enterococcus   | 9,9%  | 10,6%      | 11,2%     | **9,6%**         |
+| Escherichia    | 10,1% |  .         | **2,9%**      |   .          |
+| Lactobacillus  | 18,4% | 17,0%      | 15,8%     | **18,8%**        |
+| Listeria       | 14,1% | 17,6%      | **16,0%**     | 16,2%        |
+| Pseudomonas    | 4,2%  | 5,6%       | **4,1%**      | 4,5%         |
+| Salmonella     | 10,4% | 5,2%       | 6,5%      | **7,2%**         |
+| Staphylococcus | 15,5% | 10,9%      | **14,7%**     | 7,7%         |
+
+The second PCR (V4) shows most similarity withthe expected ratio.
 
 ## Discussion
 

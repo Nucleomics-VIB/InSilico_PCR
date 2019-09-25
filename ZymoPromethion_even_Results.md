@@ -6,7 +6,7 @@ In this short white paper we used ONT fastq data obtained after sequencing the *
 
 The corresponding Oxford nanopore gDNA reads data **Zymo-PromethION-EVEN-BB-SN** was downloaded from the **[Nanopore GridION and PromethION Mock Microbial Community Data Community Release](https://github.com/LomanLab/mockcommunity)**<sup id="a2">[2](#f2)</sup>
 
-We used the gDNA reads as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a3">[3](#f3)</sup>, the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a3">[3](#f3)</sup>, or a 'universal' amplicon corresponding to the combination **515FB-U1492Rw** <sup id="a3a">[3a](#f3a)</sup>.
+We used the gDNA reads as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a3a">[3a](#f3a)</sup>, the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a3a">[3a](#f3a)</sup>, or a 'universal' amplicon corresponding to the combination **515FB-U1492Rw** <sup id="a3a">[3a](#f3a)</sup>.
 
 We emit the hypothesis that the gDNA sequencing done on the Zymo standard is unbiased as a matter of 16S content and therefore represents the ideal material to assess the efficiency and specificity of the [ONT 16S analysis pipeline](https://nanoporetech.com/nanopore-sequencing-data-analysis)<sup id="a4">[4](#f4)</sup>. 
 

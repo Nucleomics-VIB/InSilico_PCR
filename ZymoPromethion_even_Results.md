@@ -122,10 +122,10 @@ This analysis suggests that the 16 pipeline is able to correctly classify the re
 
 <b id="f2">2</b> Ultra-deep, long-read nanopore sequencing of mock microbial community standards [Link](https://www.biorxiv.org/content/10.1101/487033v2). [↩](#a2)
 
-<b id="f3a">3a</b> Sensitivity and correlation of hypervariable regions in 16S rRNA genes in phylogenetic analysis.
-Yang B, Wang Y, Qian PY. [Link](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0992-y). [↩](#a3a)
+<b id="f3A">3a</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a3a)
 
-<b id="f3b">3b</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a3b)
+<b id="f3b">3b</b> Sensitivity and correlation of hypervariable regions in 16S rRNA genes in phylogenetic analysis.
+Yang B, Wang Y, Qian PY. [Link](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0992-y). [↩](#a3b)
 
 <b id="f4">4</b> Analysis solutions for nanopore sequencing data [link](https://nanoporetech.com/nanopore-sequencing-data-analysis). [↩](#a4)
 

@@ -14,7 +14,7 @@ In-Silico capture is not biased by primer mismatches as a real PCR would be, the
 
 The next figure represents the 16s region with variable domains as coloured blocks, and the arrows indicate the approximate location of the primers including several used here.
 
- ![16S_regions](pictures/16S_regions_Yang.png)] taken from <sup id="a3b">[3b](#f3b)</sup>
+ ![16S_regions](pictures/16S_regions_Yang.png) taken from <sup id="a3b">[3b](#f3b)</sup>
 
  ![16S_regions](pictures/16S_2D.png) taken from [theMicrobiomeViewer](http://themicrobiome.com/media/16S_viewer.cfm)
 

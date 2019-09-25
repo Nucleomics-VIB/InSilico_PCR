@@ -6,7 +6,7 @@ In this short white paper we used ONT fastq data obtained after sequencing the *
 
 The corresponding Oxford nanopore gDNA reads data **Zymo-PromethION-EVEN-BB-SN** was downloaded from the **[Nanopore GridION and PromethION Mock Microbial Community Data Community Release](https://github.com/LomanLab/mockcommunity)**<sup id="a2">[2](#f2)</sup>
 
-We used the gDNA reads as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a3">[3](#f3)</sup>, the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a3">[3](#f3)</sup>, or a 'universal' amplicon corresponding to the combination **515FB-U1492Rw** <sup id="a3">[3](#f3)</sup>.
+We used the gDNA reads as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a3">[3](#f3)</sup>, the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a3">[3](#f3)</sup>, or a 'universal' amplicon corresponding to the combination **515FB-U1492Rw** <sup id="a3a">[3a](#f3a)</sup>.
 
 We emit the hypothesis that the gDNA sequencing done on the Zymo standard is unbiased as a matter of 16S content and therefore represents the ideal material to assess the efficiency and specificity of the [ONT 16S analysis pipeline](https://nanoporetech.com/nanopore-sequencing-data-analysis)<sup id="a4">[4](#f4)</sup>. 
 
@@ -14,7 +14,7 @@ In-Silico capture is not biased by primer mismatches as a real PCR would be, the
 
 The next figure represents the 16s region with variable domains as dark blocks, spaced by more conserved regions and the arrows indicate the approximate location of the primers used here.
 
-[![16S_regions](pictures/16S_regions_Yang.png)](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0992-y)
+[![16S_regions](pictures/16S_regions_Yang.png)](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0992-y) taken from <sup id="a3b">[3b](#f3b)</sup>
 
 ## Method
 
@@ -122,7 +122,10 @@ This analysis suggests that the 16 pipeline is able to correctly classify the re
 
 <b id="f2">2</b> Ultra-deep, long-read nanopore sequencing of mock microbial community standards [Link](https://www.biorxiv.org/content/10.1101/487033v2). [↩](#a2)
 
-<b id="f3">3</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a3)
+<b id="f3a">3a</b> Sensitivity and correlation of hypervariable regions in 16S rRNA genes in phylogenetic analysis.
+Yang B, Wang Y, Qian PY. [Link](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0992-y). [↩](#a3a)
+
+<b id="f3b">3b</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a3b)
 
 <b id="f4">4</b> Analysis solutions for nanopore sequencing data [link](https://nanoporetech.com/nanopore-sequencing-data-analysis). [↩](#a4)
 

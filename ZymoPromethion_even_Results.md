@@ -16,6 +16,8 @@ The next figure represents the 16s region with variable domains as coloured bloc
 
 [![16S_regions](pictures/16S_regions_Yang.png)](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0992-y) taken from <sup id="a3b">[3b](#f3b)</sup>
 
+[![16S_regions](pictures/16S_2D.png)] taken from [theMicrobiomeViewer](http://themicrobiome.com/media/16S_viewer.cfm)
+
 ## Method
 
 The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/InSilico_PCR.sh) were submitted to the [ONT 16S analysis pipeline](https://nanoporetech.com/nanopore-sequencing-data-analysis) to be classified and allow direct comparison of the three amplicon options at different levels (only Genus is shown but the full data is provided in the 'results' folder).

@@ -18,7 +18,7 @@ The next figure represents the 16s region with variable domains as coloured bloc
 
  ![16S_regions](pictures/16S_2D.png) taken from [theMicrobiomeViewer](http://themicrobiome.com/media/16S_viewer.cfm)
 
-The next figure shows arrows indicating the location of the primers used here.
+The next figure shows arrows indicating the location of the primers used here in teh context of the E. coli reference genome (*NC000913*).
 
  ![16S_regions](pictures/16S_primers.png)
 

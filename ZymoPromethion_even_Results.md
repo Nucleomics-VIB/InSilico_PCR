@@ -57,6 +57,12 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 
 ## Comparing the results
 
+The amount of data extracted by teh different InSilico PCR runs appears different. This is probably due to false-positive 'reads' that are extracted by BBMap and are either not true 'amplicons' or are not clipped at one end, thereby carrying over ngenomic sequence outside of the amplicon region.
+
+When plotting the count of classified reads in each run, we see that the quantities are closer to each other with an apparent higher yield for the **337F-805R** dataset (2x more reads). This is likely due to the better match of the primers with the diversity of targets present in the Zymo population (my easy explanation, not tested).
+
+  ![classified_reads](pictures/classified_reads.png)
+
 The expected composition (%) obtained from the Zymo documentation and our results are as follows (sorted alphabetically and two yeast genomes removed):
 
 | species                 |  Zymo | 27F-U1492R | 337F-805R | 515FB_1492Rw |

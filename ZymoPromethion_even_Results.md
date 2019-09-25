@@ -12,7 +12,7 @@ We emit the hypothesis that the gDNA sequencing done on the Zymo standard is unb
 
 In-Silico capture is not biased by primer mismatches as a real PCR would be, the captured subsets are therefore probably more diverse than real amplicons would be and should constitute a superseed of the in-vitro truth. 
 
-The next figure represents the 16s region with variable domains as dark blocks, spaced by more conserved regions and the arrows indicate the approximate location of the primers used here.
+The next figure represents the 16s region with variable domains as coloured blocks, and the arrows indicate the approximate location of the primers including several used here.
 
 [![16S_regions](pictures/16S_regions_Yang.png)](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0992-y) taken from <sup id="a3b">[3b](#f3b)</sup>
 

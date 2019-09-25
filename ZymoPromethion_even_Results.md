@@ -101,7 +101,7 @@ Results at **Genus** level were obtained by adding up all related species and sh
 | Salmonella     | 10,4% | 5,2%       | 6,5%      | **7,2%**         |
 | Staphylococcus | 15,5% | 10,9%      | **14,7%**     | 7,7%         |
 
-The second PCR (V4) shows most similarity with the expected ratio and Escherichia is still lagging behind and is the main responsible for the difference between theoretical Zymo numbers and numbers from this experiment. Interestingly, such a broad difference is not apparent in the recent paper by Karst et al <sup id="a5">[5](#f5)</sup>
+The second PCR (V4) shows most similarity with the expected ratio and Escherichia is still lagging behind and is the main responsible for the difference between theoretical Zymo numbers and numbers from this experiment. Interestingly, such a broad difference is not apparent in the recent paper by *Karst et al* <sup id="a5">[5](#f5)</sup>
 
 ## Discussion
 
@@ -112,7 +112,7 @@ The final composition of the Zymo community does not fully match the expected re
 * Escherichia coli is absent from the analysis results, except in the 337F-805R results.
 * Bacillus is represented by four separate species (subtilis, mojavensis, halotolerans, vallismortis) in the data while only expected as the single species 'subtilis' from the Zymo documentation.
 
-Although we cannot exclude that the classification may be biased by high degree of sequence identity between these species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by Sze & Schloss <sup id="a6">[6](#f6)</sup>.
+Although we cannot exclude that the classification may be biased by high degree of sequence identity between these species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by *Sze & Schloss* <sup id="a6">[6](#f6)</sup>.
 
 This analysis suggests that the 16 pipeline is able to correctly classify the relatively simple Zymo community but may be biased in some ways and could make wrong assessments when working with more complex communities.
 

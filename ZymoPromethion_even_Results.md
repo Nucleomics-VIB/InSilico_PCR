@@ -101,7 +101,7 @@ Results at **Genus** level were obtained by adding up all related species and sh
 | Salmonella     | 10,4% | 5,2%       | 6,5%      | **7,2%**         |
 | Staphylococcus | 15,5% | 10,9%      | **14,7%**     | 7,7%         |
 
-The second PCR (V4) shows most similarity withthe expected ratio.
+The second PCR (V4) shows most similarity with the expected ratio and Escherichia is still lagging behind.
 
 ## Discussion
 

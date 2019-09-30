@@ -63,13 +63,15 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 
 ## Comparing the results
 
-The amount of data extracted by teh different InSilico PCR runs appears different. This is probably due to false-positive 'reads' that are extracted by BBMap and are either not true 'amplicons' or are not clipped at one end, thereby carrying over ngenomic sequence outside of the amplicon region.
+The amount of data extracted by the different InSilico PCR runs shows different size distributions. This is probably due to 'reads' that are extracted by BBMap and are either not true 'amplicons' or are not clipped at one end, thereby carrying over genomic sequence outside of the amplicon region.
 
 When plotting the count of classified reads in each run, we see that the quantities are closer to each other with an apparent higher yield for the **337F-805R** dataset (~2x more reads). This is likely due to the better match of the primer set with the diversity of targets present in the Zymo population (my simple explanation, not tested by re-extracting data with a different primer-pair).
 
   ![classified_reads](pictures/classified_reads.png)
 
 The expected species composition (%) obtained from the Zymo documentation and our results are as follows (sorted alphabetically and two yeast genomes removed):
+
+Please note that we counted here only classifications contributed by >1% of the reads (epi2me interface default). Since we are studying a defined community, keeping lower classifications would mainly add noise to the counts. This also implies that we loose a substancial number of reads in the process (close to 30% in some sets).
 
 | species                 |  Zymo | 27F-U1492R | 337F-805R | 515FB_1492Rw |
 |-------------------------|:-----:|:----------:|:---------:|:------------:|
@@ -115,10 +117,10 @@ Results obtained with this public data show that the ONT analysis pipeline is re
 
 The final composition of the Zymo community does not fully match the expected relative abundance of the 8 species spiked into the commercial sample.
 
-* Escherichia coli is absent from the analysis results, except in the 337F-805R results.
+* Escherichia coli is absent from the analysis results, except in the 337F-805R results. The absent reads may have been classified in <1% classes that are not counted here (thanks Simone for the suggestion).
 * Bacillus is represented by four separate species (subtilis, mojavensis, halotolerans, vallismortis) in the data while only expected as the single species 'subtilis' from the Zymo documentation.
 
-Although we cannot exclude that the classification may be biased by high degree of sequence identity between these species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by *Sze & Schloss* <sup id="a6">[6](#f6)</sup>.
+Although we cannot exclude that the classification may be biased by high degree of sequence identity between species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by *Sze & Schloss* <sup id="a6">[6](#f6)</sup>.
 
 This analysis suggests that the 16 pipeline is able to correctly classify the relatively simple Zymo community but may be biased in some ways and could make wrong assessments when working with more complex communities.
 

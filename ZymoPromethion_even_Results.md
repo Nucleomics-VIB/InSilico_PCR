@@ -28,7 +28,7 @@ The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_
 
 ## Results
 
-REM: results shown below were obtained with a minimum abundance cutoff of 1% set on the epi2me interface. The 'counts' are therefore only coming from species with >1% read support in the data.
+REM: results shown below were obtained with a minimum abundance cutoff of 1% set on the epi2me interface. The 'counts' are therefore only coming from 'classes' with >1% read support in the data.
 
 ### **27F-U1492R** in-silico amplicon (~1.4kb)
 

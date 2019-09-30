@@ -3,32 +3,41 @@
 condapath: "/opt/biotools/miniconda3/condabin"
 condaenv: "InSilico_PCR"
 
-# url for raw data
+# threads for parallel tasks
+thr: 80
+
+# threads for compression
+pigt: 8
+
+# max mem for BBMap tasks
+mem: "8g"
+
+# split data in 500k read bins (500000x4=2000000)
+lines: 2000000
+
+# Mock Community url for raw data
 host: "https://nanopore.s3.climb.ac.uk/"
 infile: "Zymo-PromethION-EVEN-BB-SN.fq.gz"
 
-# extract reads corresponding to the 16S PCR
-forwardp:"AGAGTTTGATCMTGGCTCAG"
-reversep:"CGGTWACCTTGTTACGACTT"
+# primer pairs to extract reads corresponding to 16S amplicon(s)
 
-# result folder names
-split="split_data"
-tmpout="bbmap_out"
+forwardp: "AGAGTTTGATCMTGGCTCAG"
+forwardl: "27F"
+reversep: "CGGTWACCTTGTTACGACTT"
+reversel: "1492Rw"
 
-# split data in 500k read bins (500000x4=2000000)
-lines:2000000
+#forwardp: "GACTCCTACGGGAGGCWGCAG"
+#forwardl: "337F"
+#reversep: "GACTACHVGGGTATCTAATCC"
+#reversel: "805R"
 
-# threads for parallel tasks
-thr:80
-
-# threads for compression
-pigt:8
-
-# max mem for BBMap tasks
-mem:"8g"
+#forwardp: "GTGYCAGCMGCCGCGGTAA"
+#forwardl: "515FB"
+#reversep: "CGGTWACCTTGTTACGACTT"
+#reversel: "1492Rw"
 
 # stringent primer finding to avoid noisy reads
-cut:0.8
+cut: 0.8
 
 # exclude the 1% shortest reads, change to 0 to disable filtering
-filterperc=0.01
+filterperc: 0.01

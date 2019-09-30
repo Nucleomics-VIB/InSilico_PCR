@@ -33,20 +33,20 @@ pigt=8
 mem="8g"
 
 # extract reads corresponding to the 16S PCR
-#forwardp="AGAGTTTGATCMTGGCTCAG"
-#forwardl="27F"
-#reversep="CGGTWACCTTGTTACGACTT"
-#reversel="1492Rw"
+forwardp="AGAGTTTGATCMTGGCTCAG"
+forwardl="27F"
+reversep="CGGTWACCTTGTTACGACTT"
+reversel="1492Rw"
 
 #forwardp="GACTCCTACGGGAGGCWGCAG"
 #forwardl="337F"
 #reversep="GACTACHVGGGTATCTAATCC"
 #reversel="805R"
 
-forwardp="GTGYCAGCMGCCGCGGTAA"
-forwardl="515FB"
-reversep="CGGTWACCTTGTTACGACTT"
-reversel="1492Rw"
+#forwardp="GTGYCAGCMGCCGCGGTAA"
+#forwardl="515FB"
+#reversep="CGGTWACCTTGTTACGACTT"
+#reversel="1492Rw"
 
 # be stringent to avoid noisy reads
 cut=0.8

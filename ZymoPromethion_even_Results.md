@@ -35,7 +35,7 @@ REM: results shown below were obtained with a minimum abundance cutoff of 1% set
 * Epi2ME **genus** results for the **27F-U1492R** in-silico amplicon: [(link)](https://epi2me.nanoporetech.com/workflow_instance/214013?token=E2EC0ED6-D91D-11E9-8C06-8D18643BF1F3)
    * 27F: "AGAGTTTGATCMTGGCTCAG"
    * 1492Rw: "CGGTWACCTTGTTACGACTT"
-   * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/27F-U1492R_214013_classification_16s_barcode-v1.csv)
+   * [epi2me results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/27F-U1492Rw_214013_classification_16s_barcode-v1.csv.zip)
 
  ![27F-U1492R_reads](pictures/27F-U1492R_reads.png)
 

@@ -118,11 +118,11 @@ The second PCR (V4) shows most similarity with the expected ratio and Escherichi
 
 ### MetONTIIME results vs Zymo
 
-**[MetONTIIME]** was recently created to offer an alternative to the ONT epi2me 'black-box' analysis solution. We show here a resuilt from MetONTIIME using the fastq data produced above in order to compare its results to those of ONT. Due to the size of the data, only the first 10% of each read set was used to classify the three amplicons.
+**MetONTIIME** was recently created to offer an alternative to the ONT epi2me 'black-box' analysis solution. We show here a resuilt from MetONTIIME using the fastq data produced above in order to compare its results to those of ONT. Due to the size of the data, only the first 10% of each read set was used to classify the three amplicons.
 
-We did not invest enough time in MetONTIIME to allow full comparison to the ONT epi2me method and only did a quick run in order to get comparable data. It is very likely that the tool can produce better results and the fact that it its code is accessible mekaes it more suited for development and research applications with for instnce the possibility to change reference database and adapt the parameters to a given metagenomic environment.
+We did not invest enough time in using MetONTIIME to allow full comparison to the ONT epi2me method and only did a quick run in order to get comparable data. It is very likely that the tool can produce better results and the fact that it its code is accessible makes it more suited for development and research applications including the possibility to change reference database and adapt the parameters to a given metagenomic environment.
 
-The results of a default classification using out of the box parameters are reported in the table below, sorted by the first amplicon counts. **(§) Due to time/server constrains, only the first 10% of the date were used to classify with MetONTIIME**.
+The results of a default classification using out of the box parameters are reported in the table below, sorted by the first amplicon counts (*27F-U1492R*). **(§) Due to time/server constrains, only the first 10% of the date were used to classify with MetONTIIME**.
 
 * [metontiime results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/MetONTIIME_results.csv) derived from the file **species_counts.txt**.
 
@@ -188,19 +188,19 @@ The results of a default classification using out of the box parameters are repo
 
 ## Discussion
 
-Results obtained with this public data show that the ONT epi2me analysis pipeline is relatively robust when comparing three PCR amplicons and returns quasi identical classification at species level.
+Results obtained with this public data show that the ONT epi2me analysis pipeline is relatively robust when comparing three PCR amplicons and returns quasi identical classification dosn to species level.
 
-MetONTIIME, although slow for such large datasets due sto a number of steps using a single cpu also classifies the community in a relatively similar way. No quantitative analysis is done here to correlate the two tools since the MetONTIIME run was only done on partial data.
+MetONTIIME, although slow for such large datasets, due to a number of steps using a single cpu, also classifies the community in a relatively similar way. No quantitative analysis was done here to correlate the two tools since the MetONTIIME run was only done on partial data.
 
-The final composition of the Zymo community using both toolboxes does not fully match the expected relative abundance of the 8 species spiked into the commercial sample.
+The final composition of the Zymo community using both approaches does not fully match the expected relative abundance of the 8 species spiked into the commercial sample.
 
-* Escherichia coli is absent from the analysis results, except in the 337F-805R results. The absent reads may have been classified in <1% classes that are not counted here (thanks Simone for the suggestion).
+* Escherichia coli is veru low to absent from the analysis results. The absent reads may have been classified in <1% classes that are not counted in the epi2me or transferred to other species with similar sequences.
 * Bacillus is represented by four separate species (subtilis, mojavensis, halotolerans, vallismortis) in the data while only expected as the single species 'subtilis' from the Zymo documentation.
 * Listeria monocytogenes is replaced mainly by Listeria welshimeri in both result sets.
 
-Although we cannot exclude that the classification may be biased by high degree of sequence identity between species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by *Sze & Schloss* <sup id="a8">[8](#f8)</sup>.
+Although we cannot exclude that the classification may be biased by high degree of sequence identity between species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the recent report published by *Sze & Schloss* <sup id="a8">[8](#f8)</sup>.
 
-This analysis suggests that the 16 pipeline is able to correctly classify the relatively simple Zymo community but may be biased in some ways and could make wrong assessments when working with more complex communities. 
+This analysis suggests that the 16 pipeline is able to correctly classify the relatively simple Zymo community but suggests that it may be biased in some ways and could make wrong assessments when working with more complex communities. 
 
 We also observe similar bias in the results when using the MetONTIIME tool which qualifies as a replacement for the ONT method but could benefit from speedup to better use the available computing resources (we thank the author for his kind help furing tool install and usage).
 

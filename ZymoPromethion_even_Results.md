@@ -65,7 +65,59 @@ REM: results shown below were obtained with a minimum abundance cutoff of 1% set
 
  ![515FB_1492Rw_genus](pictures/515FB_1492Rw_genus.png)
 
-### MetONTIIME results
+## Comparing the results
+
+### ONT results vs Zymo community
+
+The amount of data extracted by the different InSilico PCR runs shows different size distributions. This is probably due to 'reads' that are extracted by BBMap and are either not true 'amplicons' or are not clipped at one end, thereby carrying over genomic sequence outside of the amplicon region.
+
+When plotting the count of classified reads in each run, we see that the quantities are closer to each other with an apparent higher yield for the **337F-805R** dataset (~2x more reads). This is likely due to the better match of the primer set with the diversity of targets present in the Zymo population (my simple explanation, not tested by re-extracting data with a different primer-pair).
+
+  ![classified_reads](pictures/classified_reads.png)
+
+The expected species composition (%) obtained from the Zymo documentation and our results are as follows (sorted alphabetically and two yeast genomes removed):
+
+Please note that we counted here only classifications contributed by >1% of the reads (epi2me interface default). Since we are studying a defined community, keeping lower classifications would mainly add noise to the counts. This also implies that we loose a substancial number of reads in the process (close to 30% in some sets).
+
+| species                 |  Zymo | 27F-U1492R | 337F-805R | 515FB_1492Rw |
+|-------------------------|:-----:|:----------:|:---------:|:------------:|
+| Bacillus halotolerans   |   .   |    8,4%    |    1,8%   |     5,2%     |
+| Bacillus mojavensis     |   .   |    10,1%   |   24,9%   |     12,0%    |
+| Bacillus subtilis       | 17,4% |    11,6%   |    2,1%   |     **15,7%**    |
+| Bacillus vallismortis   |   .   |    2,9%    |     .     |     3,2%     |
+| Enterococcus faecalis   |  9,9% |    10,6%   |   11,2%   |     **9,6%**     |
+| Escherichia coli        | 10,1% |     .      |    **1,1%**   |      .       |
+| Escherichia fergusonii  |   .   |     .      |    **1,8%**   |      .       |
+| Lactobacillus fermentum | 18,4% |    15,3%   |   **15,8%**   |     15,7%    |
+| Lactobacillus gastricus |   .   |    1,7%    |     .     |      .       |
+| Lactobacillus suebicus  |   .   |     .      |     .     |     3,1%     |
+| Listeria innocua        |   .   |    2,7%    |     .     |     **10,7%**    |
+| Listeria monocytogenes  | 14,1% |     .      |     .     |      .       |
+| Listeria welshimeri     |   .   |    14,9%   |     .     |     **5,4%**     |
+| Listeria welshimeri     |   .   |     .      |   16,0%   |      .       |
+| Pseudomonas aeruginosa  |  4,2% |    5,6%    |    **4,1%**   |     4,5%     |
+| Salmonella enterica     | 10,4% |    5,2%    |    6,5%   |     **7,2%**     |
+| Staphylococcus aureus   | 15,5% |    10,9%   |   **13,9%**   |     7,7%     |
+| Staphylococcus petrasii |   .   |     .      |    **0,9%**   |      .       |
+
+('.' absent; in bold, the closest **species** hit(s) from this anaysis)
+
+Results at **Genus** level were obtained by adding up all related species and shown next
+
+| genus          | Zymo  | 27F-U1492R | 337F-805R | 515FB_1492Rw |
+|----------------|-------|------------|-----------|--------------|
+| Bacillus       | 17,4% | 33,1%      | **28,8%**     | 36,1%        |
+| Enterococcus   | 9,9%  | 10,6%      | 11,2%     | **9,6%**         |
+| Escherichia    | 10,1% |  .         | **2,9%**      |   .          |
+| Lactobacillus  | 18,4% | 17,0%      | 15,8%     | **18,8%**        |
+| Listeria       | 14,1% | 17,6%      | **16,0%**     | 16,2%        |
+| Pseudomonas    | 4,2%  | 5,6%       | **4,1%**      | 4,5%         |
+| Salmonella     | 10,4% | 5,2%       | 6,5%      | **7,2%**         |
+| Staphylococcus | 15,5% | 10,9%      | **14,7%**     | 7,7%         |
+
+The second PCR (V4) shows most similarity with the expected ratio and Escherichia is still lagging behind and is the main responsible for the difference between theoretical Zymo numbers and numbers from this experiment. Interestingly, such a broad difference is not apparent in the recent paper by *Karst et al* <sup id="a7">[7](#f7)</sup>
+
+### MetONTIIME results vs Zymo
 
 **[MetONTIIME]** was recently created to offer an alternative to the ONT epi2me 'black-box' analysis solution. We show here a resuilt from MetONTIIME using the fastq data produced above in order to compare its results to those of ONT. Due to the size of the data, only the first 10% of each read set was used to classify the three amplicons.
 
@@ -133,64 +185,17 @@ The results of the classification are reported in the table below, sorted by the
 
 (§) Only the first 10% of the reads were used to classify
 
-## Comparing the results
-
-The amount of data extracted by the different InSilico PCR runs shows different size distributions. This is probably due to 'reads' that are extracted by BBMap and are either not true 'amplicons' or are not clipped at one end, thereby carrying over genomic sequence outside of the amplicon region.
-
-When plotting the count of classified reads in each run, we see that the quantities are closer to each other with an apparent higher yield for the **337F-805R** dataset (~2x more reads). This is likely due to the better match of the primer set with the diversity of targets present in the Zymo population (my simple explanation, not tested by re-extracting data with a different primer-pair).
-
-  ![classified_reads](pictures/classified_reads.png)
-
-The expected species composition (%) obtained from the Zymo documentation and our results are as follows (sorted alphabetically and two yeast genomes removed):
-
-Please note that we counted here only classifications contributed by >1% of the reads (epi2me interface default). Since we are studying a defined community, keeping lower classifications would mainly add noise to the counts. This also implies that we loose a substancial number of reads in the process (close to 30% in some sets).
-
-| species                 |  Zymo | 27F-U1492R | 337F-805R | 515FB_1492Rw |
-|-------------------------|:-----:|:----------:|:---------:|:------------:|
-| Bacillus halotolerans   |   .   |    8,4%    |    1,8%   |     5,2%     |
-| Bacillus mojavensis     |   .   |    10,1%   |   24,9%   |     12,0%    |
-| Bacillus subtilis       | 17,4% |    11,6%   |    2,1%   |     **15,7%**    |
-| Bacillus vallismortis   |   .   |    2,9%    |     .     |     3,2%     |
-| Enterococcus faecalis   |  9,9% |    10,6%   |   11,2%   |     **9,6%**     |
-| Escherichia coli        | 10,1% |     .      |    **1,1%**   |      .       |
-| Escherichia fergusonii  |   .   |     .      |    **1,8%**   |      .       |
-| Lactobacillus fermentum | 18,4% |    15,3%   |   **15,8%**   |     15,7%    |
-| Lactobacillus gastricus |   .   |    1,7%    |     .     |      .       |
-| Lactobacillus suebicus  |   .   |     .      |     .     |     3,1%     |
-| Listeria innocua        |   .   |    2,7%    |     .     |     **10,7%**    |
-| Listeria monocytogenes  | 14,1% |     .      |     .     |      .       |
-| Listeria welshimeri     |   .   |    14,9%   |     .     |     **5,4%**     |
-| Listeria welshimeri     |   .   |     .      |   16,0%   |      .       |
-| Pseudomonas aeruginosa  |  4,2% |    5,6%    |    **4,1%**   |     4,5%     |
-| Salmonella enterica     | 10,4% |    5,2%    |    6,5%   |     **7,2%**     |
-| Staphylococcus aureus   | 15,5% |    10,9%   |   **13,9%**   |     7,7%     |
-| Staphylococcus petrasii |   .   |     .      |    **0,9%**   |      .       |
-
-('.' absent; in bold, the closest **species** hit(s) from this anaysis)
-
-Results at **Genus** level were obtained by adding up all related species and shown next
-
-| genus          | Zymo  | 27F-U1492R | 337F-805R | 515FB_1492Rw |
-|----------------|-------|------------|-----------|--------------|
-| Bacillus       | 17,4% | 33,1%      | **28,8%**     | 36,1%        |
-| Enterococcus   | 9,9%  | 10,6%      | 11,2%     | **9,6%**         |
-| Escherichia    | 10,1% |  .         | **2,9%**      |   .          |
-| Lactobacillus  | 18,4% | 17,0%      | 15,8%     | **18,8%**        |
-| Listeria       | 14,1% | 17,6%      | **16,0%**     | 16,2%        |
-| Pseudomonas    | 4,2%  | 5,6%       | **4,1%**      | 4,5%         |
-| Salmonella     | 10,4% | 5,2%       | 6,5%      | **7,2%**         |
-| Staphylococcus | 15,5% | 10,9%      | **14,7%**     | 7,7%         |
-
-The second PCR (V4) shows most similarity with the expected ratio and Escherichia is still lagging behind and is the main responsible for the difference between theoretical Zymo numbers and numbers from this experiment. Interestingly, such a broad difference is not apparent in the recent paper by *Karst et al* <sup id="a7">[7](#f7)</sup>
-
 ## Discussion
 
-Results obtained with this public data show that the ONT analysis pipeline is relatively robust when comparing three PCR amplicons and returns quasi identical classification at species level.
+Results obtained with this public data show that the ONT epi2me analysis pipeline is relatively robust when comparing three PCR amplicons and returns quasi identical classification at species level.
 
-The final composition of the Zymo community does not fully match the expected relative abundance of the 8 species spiked into the commercial sample.
+MetONTIIME, although slow for such large datasets due sto a number of steps using a single cpu also classifies the community in a relatively similar way. No quantitative analysis is done here to correlate the two tools since the MetONTIIME run was only done on partial data.
+
+The final composition of the Zymo community using both toolboxes does not fully match the expected relative abundance of the 8 species spiked into the commercial sample.
 
 * Escherichia coli is absent from the analysis results, except in the 337F-805R results. The absent reads may have been classified in <1% classes that are not counted here (thanks Simone for the suggestion).
 * Bacillus is represented by four separate species (subtilis, mojavensis, halotolerans, vallismortis) in the data while only expected as the single species 'subtilis' from the Zymo documentation.
+* Listeria monocytogenes is almost absent in teh MetONTIIME results although
 
 Although we cannot exclude that the classification may be biased by high degree of sequence identity between species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by *Sze & Schloss* <sup id="a8">[8](#f8)</sup>.
 

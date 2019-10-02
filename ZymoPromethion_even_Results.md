@@ -26,7 +26,9 @@ The next figure shows arrows indicating the location of the 16S primers used her
 
 The read sets produced by our [code](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/InSilico_PCR.sh) were submitted to the [ONT 16S analysis pipeline](https://nanoporetech.com/nanopore-sequencing-data-analysis) to be classified and allow direct comparison of the three amplicon options at different levels (only Genus is shown but the full data is provided in the 'results' folder).
 
-## epi2me results
+For comparison, 10% of the reads in each set were used for a second analysis using **[MetONTIIME](https://github.com/MaestSi/MetONTIIME)** <sup id="a6">[6](#f6)</sup>
+
+### epi2me results
 
 REM: results shown below were obtained with a minimum abundance cutoff of 1% set on the epi2me interface. The 'counts' are therefore only coming from 'classes' with >1% read support in the data.
 
@@ -63,9 +65,9 @@ REM: results shown below were obtained with a minimum abundance cutoff of 1% set
 
  ![515FB_1492Rw_genus](pictures/515FB_1492Rw_genus.png)
 
-## MetONTIIME results
+### MetONTIIME results
 
-**[MetONTIIME](https://github.com/MaestSi/MetONTIIME)** <sup id="a6">[6](#f6)</sup> was recently created to offer an alternative to the ONT epi2me 'black-box' analysis solution. We show here a resuilt from MetONTIIME using the fastq data produced above in order to compare its results to those of ONT. Due to the size of the data, only the first 10% of each read set was used to classify the three amplicons.
+**[MetONTIIME]** was recently created to offer an alternative to the ONT epi2me 'black-box' analysis solution. We show here a resuilt from MetONTIIME using the fastq data produced above in order to compare its results to those of ONT. Due to the size of the data, only the first 10% of each read set was used to classify the three amplicons.
 
 The results of the classification are reported in the table below, sorted by the first amplicon counts
 
@@ -204,10 +206,10 @@ This analysis suggests that the 16 pipeline is able to correctly classify the re
 
 <b id="f4">4</b> Analysis solutions for nanopore sequencing data [link](https://nanoporetech.com/nanopore-sequencing-data-analysis). [↩](#a4)
 
-<b id="f5">5</b> Maestri S. et al. A Rapid and Accurate MinION-Based Workflow for Tracking Species Biodiversity in the Field. [link](https://doi.org/10.3390/genes10060468). [↩](#a5)
+<b id="f5">5</b> Sensitivity and correlation of hypervariable regions in 16S rRNA genes in phylogenetic analysis.
+Yang B et al. [Link](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0992-y). [↩](#a5)
 
-<b id="f6">6</b> Sensitivity and correlation of hypervariable regions in 16S rRNA genes in phylogenetic analysis.
-Yang B et al. [Link](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0992-y). [↩](#a6)
+<b id="f6">6</b> Maestri S. et al. A Rapid and Accurate MinION-Based Workflow for Tracking Species Biodiversity in the Field. [link](https://doi.org/10.3390/genes10060468). [↩](#a6)
 
 <b id="f7">7</b> Enabling high-accuracy long-read amplicon sequences using unique molecular identifiers and Nanopore sequencing. Karst, A et al. [link](https://www.biorxiv.org/content/10.1101/645903v2). [↩](#a7)
 

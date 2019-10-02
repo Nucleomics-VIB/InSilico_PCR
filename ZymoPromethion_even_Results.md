@@ -213,6 +213,8 @@ The genus table was obtained by summing all species within each genus in the tab
 
 (in bold, the closest **genus** hit(s) from this anaysis)
 
+Barplot generated in the **[Qiime viewer](https://view.qiime2.org)** after removing Unassigned counts in the data
+
 ![MetONTIIME_genus_composition](pictures/metontiime.view.qiime2.org.png)
 
 ## Discussion

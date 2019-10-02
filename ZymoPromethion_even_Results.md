@@ -213,6 +213,8 @@ The genus table was obtained by summing all species within each genus in the tab
 
 (in bold, the closest **genus** hit(s) from this anaysis)
 
+[![MetONTIIME_genus_composition](pictures/metontiime.view.qiime2.org.png)]
+
 ## Discussion
 
 Results obtained with this public data show that the ONT epi2me analysis pipeline is relatively robust when comparing three PCR amplicons and returns quasi identical classification dosn to species level.

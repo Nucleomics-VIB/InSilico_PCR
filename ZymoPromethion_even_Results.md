@@ -124,7 +124,7 @@ We did not invest enough time in MetONTIIME to allow full comparison to the ONT 
 
 The results of a default classification using out of the box parameters are reported in the table below, sorted by the first amplicon counts. **(§) Due to time/server constrains, only the first 10% of the date were used to classify with MetONTIIME**.
 
-* [metontiime results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/MetONTIIME_results.csv)
+* [metontiime results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/MetONTIIME_results.csv) derived from the file **species_counts.txt**.
 
 | OTU ID                         | 27F-U1492R (§) | 337F-805R (§) | 515FB-U1492Rw (§) | Zymo  | 27F-U1492R (%) | 337F-805R (%) | 515FB-U1492Rw (%) |
 |--------------------------------|----------------|---------------|-------------------|-------|----------------|---------------|-------------------|

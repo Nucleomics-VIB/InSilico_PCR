@@ -209,7 +209,7 @@ The genus table was obtained by summing all species within each genus in the tab
 | Planococcus    | 2                     | 0                    | 12                       |       | 0,0%           | 0,0%           | 0,1%               |
 | Anaerobacillus | 0                     | 0                    | 23                       |       | 0,0%           | 0,0%           | 0,2%               |
 | Streptococcus  | 0                     | 0                    | 39                       |       | 0,0%           | 0,0%           | 0,4%               |
-| Grand Total    | 8476                  | 12137                | 10621                    |       | 100,0%         | 100,0%         | 100,0%             |
+| Grand Total    | 8476                  | 12137                | 10621                    |       | 100,0% (sorted)        | 100,0%         | 100,0%             |
 
 (in bold, the closest **genus** hit(s) from this anaysis)
 

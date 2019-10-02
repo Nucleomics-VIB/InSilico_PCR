@@ -186,7 +186,7 @@ The results of a default classification using out of the box parameters (and the
 | Bacillus nematocida            | 10             | 5             | 12                | .     | 0,1%           | 0,0%          | 0,1%              |
 | Planococcus maritimus          | 2              | 0             | 12                | .     | 0,0%           | 0,0%          | 0,1%              |
 | Streptococcus parasanguinis    | 0              | 0             | 11                | .     | 0,0%           | 0,0%          | 0,1%              |
-| total                          | 8476           | 12137         | 10621             | 100%  | 100%           | 100%          | 100%              |
+| total                          | 8476           | 12137         | 10621             | 100%  | 100% (sorted)          | 100%          | 100%              |
 
 ('.' absent; in bold, the closest **species** hit(s) from this anaysis)
 

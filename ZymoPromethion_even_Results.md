@@ -65,7 +65,7 @@ REM: results shown below were obtained with a minimum abundance cutoff of 1% set
 
 ## MetONTIIME results
 
-Due to the size of the data, only teh first 10% of each read set was used to classify the three amplicons using MetONTIIME '''[]()'''
+**[MetONTIIME](https://github.com/MaestSi/MetONTIIME)** was recently created to offer an alternative to the ONT epi2me 'black-box' analysis solution. We show here a resuilt from MetONTIIME using the fastq data produced above in order to compare its results to those of ONT. Due to the size of the data, only the first 10% of each read set was used to classify the three amplicons.
 
 The results of the classification are reported in the table below, sorted by the first amplicon counts
 

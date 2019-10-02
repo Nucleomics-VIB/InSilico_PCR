@@ -114,6 +114,8 @@ Results at **Genus** level were obtained by adding up all related species and sh
 | Salmonella     | 10,4% | 5,2%       | 6,5%      | **7,2%**         |
 | Staphylococcus | 15,5% | 10,9%      | **14,7%**     | 7,7%         |
 
+('.' absent; in bold, the closest **genus** hit(s) from this anaysis)
+
 The second PCR (V4) shows most similarity with the expected ratio and Escherichia is still lagging behind and is the main responsible for the difference between theoretical Zymo numbers and numbers from this experiment. Interestingly, such a broad difference is not apparent in the recent paper by *Karst et al* <sup id="a7">[7](#f7)</sup>
 
 ### MetONTIIME results vs Zymo
@@ -129,17 +131,17 @@ The results of a default classification using out of the box parameters (and the
 | OTU ID                         | 27F-U1492R (§) | 337F-805R (§) | 515FB-U1492Rw (§) | Zymo  | 27F-U1492R (%) | 337F-805R (%) | 515FB-U1492Rw (%) |
 |--------------------------------|----------------|---------------|-------------------|-------|----------------|---------------|-------------------|
 | Bacillus halotolerans          | 1335           | 718           | 1263              | .     | 15,8%          | 5,9%          | 11,9%             |
-| Lactobacillus fermentum        | 1074           | 1775          | 1229              | 18,4% | 12,7%          | 14,6%         | 11,6%             |
-| Salmonella enterica            | 938            | 884           | 1105              | 10,4% | 11,1%          | 7,3%          | 10,4%             |
-| Enterococcus faecalis          | 817            | 1281          | 887               | 9,9%  | 9,6%           | 10,6%         | 8,4%              |
-| Staphylococcus aureus          | 650            | 368           | 736               | 15,5% | 7,7%           | 3,0%          | 6,9%              |
+| Lactobacillus fermentum        | 1074           | 1775          | 1229              | 18,4% | **12,7%**          | 14,6%         | 11,6%             |
+| Salmonella enterica            | 938            | 884           | 1105              | 10,4% | 11,1%          | 7,3%          | **10,4%**             |
+| Enterococcus faecalis          | 817            | 1281          | 887               | 9,9%  | **9,6%**           | 10,6%         | 8,4%              |
+| Staphylococcus aureus          | 650            | 368           | 736               | 15,5% | **7,7%**           | 3,0%          | 6,9%              |
 | Escherichia fergusonii         | 682            | 322           | 711               | .     | 8,0%           | 2,7%          | 6,7%              |
-| Listeria innocua               | 435            | 258           | 665               | 15,5% | 5,1%           | 2,1%          | 6,3%              |
+| Listeria innocua               | 435            | 258           | 665               | 15,5% | 5,1%           | 2,1%          | **6,3%**              |
 | Bacillus mojavensis            | 331            | 2165          | 548               | .     | 3,9%           | 17,8%         | 5,2%              |
 | Listeria welshimeri            | 671            | 333           | 543               | .     | 7,9%           | 2,7%          | 5,1%              |
 | Bacillus vallismortis          | 247            | 145           | 501               | .     | 2,9%           | 1,2%          | 4,7%              |
-| Pseudomonas aeruginosa         | 319            | 422           | 312               | 4,2%  | 3,8%           | 3,5%          | 2,9%              |
-| Bacillus subtilis              | 185            | 178           | 180               | 17,4% | 2,2%           | 1,5%          | 1,7%              |
+| Pseudomonas aeruginosa         | 319            | 422           | 312               | 4,2%  | **3,8%**           | 3,5%          | 2,9%              |
+| Bacillus subtilis              | 185            | 178           | 180               | 17,4% | **2,2%**           | 1,5%          | 1,7%              |
 | Listeria seeligeri             | 132            | 73            | 169               | .     | 1,6%           | 0,6%          | 1,6%              |
 | Bacillus sporothermodurans     | 1              | 2             | 127               | .     | 0,0%           | 0,0%          | 1,2%              |
 | Escherichia marmotae           | 105            | 75            | 119               | .     | 1,2%           | 0,6%          | 1,1%              |
@@ -160,7 +162,7 @@ The results of a default classification using out of the box parameters (and the
 | Shigella boydii                | 19             | 16            | 41                | .     | 0,2%           | 0,1%          | 0,4%              |
 | Bacillus hisashii              | 0              | 0             | 34                | .     | 0,0%           | 0,0%          | 0,3%              |
 | Bacillus licheniformis         | 23             | 25            | 29                | .     | 0,3%           | 0,2%          | 0,3%              |
-| Escherichia coli               | 8              | 96            | 26                | 10,1% | 0,1%           | 0,8%          | 0,2%              |
+| Escherichia coli               | 8              | 96            | 26                | 10,1% | 0,1%           | **0,8%**          | 0,2%              |
 | Enterococcus pseudoavium       | 0              | 0             | 24                | .     | 0,0%           | 0,0%          | 0,2%              |
 | Anaerobacillus macyae          | 0              | 0             | 23                | .     | 0,0%           | 0,0%          | 0,2%              |
 | Listeria ivanovii              | 14             | 1240          | 23                | .     | 0,2%           | 10,2%         | 0,2%              |
@@ -176,7 +178,7 @@ The results of a default classification using out of the box parameters (and the
 | Enterobacter cloacae           | 14             | 31            | 14                | .     | 0,2%           | 0,3%          | 0,1%              |
 | Enterococcus sulfureus         | 3              | 4             | 14                | .     | 0,0%           | 0,0%          | 0,1%              |
 | Listeria marthii               | 9              | 3             | 14                | .     | 0,1%           | 0,0%          | 0,1%              |
-| Listeria monocytogenes         | 13             | 16            | 14                | 14,1% | 0,2%           | 0,1%          | 0,1%              |
+| Listeria monocytogenes         | 13             | 16            | 14                | 14,1% | **0,2%**           | 0,1%          | 0,1%              |
 | Streptococcus gallinaceus      | 0              | 0             | 14                | .     | 0,0%           | 0,0%          | 0,1%              |
 | Streptococcus urinalis         | 0              | 0             | 14                | .     | 0,0%           | 0,0%          | 0,1%              |
 | Enterococcus saccharolyticus   | 4              | 4             | 13                | .     | 0,0%           | 0,0%          | 0,1%              |
@@ -190,14 +192,14 @@ The genus table was obtained by summing all species within each genus in the tab
 
 | Genus          | Sum of 27F-U1492R (§) | Sum of 337F-805R (§) | Sum of 515FB-U1492Rw (§) |       | 27F-U1492R (%) | 337F-805R  (%) | 515FB-U1492Rw  (%) |
 |----------------|-----------------------|----------------------|--------------------------|-------|----------------|----------------|--------------------|
-| Bacillus       | 2156                  | 3262                 | 2879                     | 17,4% | 25,4%          | 26,9%          | 27,1%              |
-| Listeria       | 1274                  | 1923                 | 1428                     | 14,1% | 15,0%          | 15,8%          | 13,4%              |
-| Lactobacillus  | 1084                  | 1788                 | 1522                     | 18,4% | 12,8%          | 14,7%          | 14,3%              |
-| Salmonella     | 938                   | 884                  | 1105                     | 10,4% | 11,1%          | 7,3%           | 10,4%              |
-| Enterococcus   | 875                   | 1324                 | 1113                     | 9,9%  | 10,3%          | 10,9%          | 10,5%              |
-| Escherichia    | 821                   | 517                  | 900                      | 10,1% | 9,7%           | 4,3%           | 8,5%               |
-| Staphylococcus | 800                   | 1554                 | 1008                     | 15,5% | 9,4%           | 12,8%          | 9,5%               |
-| Pseudomonas    | 319                   | 422                  | 312                      | 4,2%  | 3,8%           | 3,5%           | 2,9%               |
+| Bacillus       | 2156                  | 3262                 | 2879                     | 17,4% | **25,4%**      | 26,9%          | 27,1%              |
+| Listeria       | 1274                  | 1923                 | 1428                     | 14,1% | 15,0%          | 15,8%          | **13,4%**          |
+| Lactobacillus  | 1084                  | 1788                 | 1522                     | 18,4% | 12,8%          | **14,7%**      | 14,3%              |
+| Salmonella     | 938                   | 884                  | 1105                     | 10,4% | 11,1%          | 7,3%           | **10,4%**          |
+| Enterococcus   | 875                   | 1324                 | 1113                     | 9,9%  | **10,3%**      | 10,9%          | 10,5%              |
+| Escherichia    | 821                   | 517                  | 900                      | 10,1% | **9,7%**       | 4,3%           | 8,5%               |
+| Staphylococcus | 800                   | 1554                 | 1008                     | 15,5% | 9,4%           | **12,8%**      | 9,5%               |
+| Pseudomonas    | 319                   | 422                  | 312                      | 4,2%  | **3,8%**       | 3,5%           | 2,9%               |
 | Shigella       | 167                   | 416                  | 236                      |       | 2,0%           | 3,4%           | 2,2%               |
 | Kosakonia      | 17                    | 13                   | 17                       |       | 0,2%           | 0,1%           | 0,2%               |
 | Enterobacter   | 14                    | 31                   | 14                       |       | 0,2%           | 0,3%           | 0,1%               |
@@ -206,6 +208,8 @@ The genus table was obtained by summing all species within each genus in the tab
 | Anaerobacillus | 0                     | 0                    | 23                       |       | 0,0%           | 0,0%           | 0,2%               |
 | Streptococcus  | 0                     | 0                    | 39                       |       | 0,0%           | 0,0%           | 0,4%               |
 | Grand Total    | 8476                  | 12137                | 10621                    |       | 100,0%         | 100,0%         | 100,0%             |
+
+(in bold, the closest **genus** hit(s) from this anaysis)
 
 ## Discussion
 

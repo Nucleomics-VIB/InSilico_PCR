@@ -188,6 +188,8 @@ The results of a default classification using out of the box parameters (and the
 | Streptococcus parasanguinis    | 0              | 0             | 11                | .     | 0,0%           | 0,0%          | 0,1%              |
 | total                          | 8476           | 12137         | 10621             | 100%  | 100%           | 100%          | 100%              |
 
+('.' absent; in bold, the closest **species** hit(s) from this anaysis)
+
 The genus table was obtained by summing all species within each genus in the table above
 
 | Genus          | Sum of 27F-U1492R (§) | Sum of 337F-805R (§) | Sum of 515FB-U1492Rw (§) |       | 27F-U1492R (%) | 337F-805R  (%) | 515FB-U1492Rw  (%) |

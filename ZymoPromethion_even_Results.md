@@ -120,7 +120,9 @@ The second PCR (V4) shows most similarity with the expected ratio and Escherichi
 
 **[MetONTIIME]** was recently created to offer an alternative to the ONT epi2me 'black-box' analysis solution. We show here a resuilt from MetONTIIME using the fastq data produced above in order to compare its results to those of ONT. Due to the size of the data, only the first 10% of each read set was used to classify the three amplicons.
 
-The results of the classification are reported in the table below, sorted by the first amplicon counts
+We did not invest enough time in MetONTIIME to allow full comparison to the ONT epi2me method and only did a quick run in order to get comparable data. It is very likely that the tool can produce better results and the fact that it its code is accessible mekaes it more suited for development and research applications with for instnce the possibility to change reference database and adapt the parameters to a given metagenomic environment.
+
+The results of a default classification using out of the box parameters are reported in the table below, sorted by the first amplicon counts. **(§) Due to time/server constrains, only the first 10% of the date were used to classify with MetONTIIME**.
 
 | OTU ID                         | 27F-U1492R (§) | 337F-805R (§) | 515FB-U1492Rw (§) | Zymo  | 27F-U1492R (%) | 337F-805R (%) | 515FB-U1492Rw (%) |
 |--------------------------------|----------------|---------------|-------------------|-------|----------------|---------------|-------------------|
@@ -182,8 +184,6 @@ The results of the classification are reported in the table below, sorted by the
 | Streptococcus parasanguinis    | 0              | 0             | 11                | .     | 0,0%           | 0,0%          | 0,1%              |
 | total                          | 8476           | 12137         | 10621             | 100%  | 100%           | 100%          | 100%              |
 
-(§) Only the first 10% of the reads were used to classify
-
 ## Discussion
 
 Results obtained with this public data show that the ONT epi2me analysis pipeline is relatively robust when comparing three PCR amplicons and returns quasi identical classification at species level.
@@ -194,11 +194,19 @@ The final composition of the Zymo community using both toolboxes does not fully 
 
 * Escherichia coli is absent from the analysis results, except in the 337F-805R results. The absent reads may have been classified in <1% classes that are not counted here (thanks Simone for the suggestion).
 * Bacillus is represented by four separate species (subtilis, mojavensis, halotolerans, vallismortis) in the data while only expected as the single species 'subtilis' from the Zymo documentation.
-* Listeria monocytogenes is replaced by Listeria Welshimeri in both result sets.
+* Listeria monocytogenes is replaced mainly by Listeria welshimeri in both result sets.
 
 Although we cannot exclude that the classification may be biased by high degree of sequence identity between species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by *Sze & Schloss* <sup id="a8">[8](#f8)</sup>.
 
-This analysis suggests that the 16 pipeline is able to correctly classify the relatively simple Zymo community but may be biased in some ways and could make wrong assessments when working with more complex communities.
+This analysis suggests that the 16 pipeline is able to correctly classify the relatively simple Zymo community but may be biased in some ways and could make wrong assessments when working with more complex communities. 
+
+We also observe similar bias in the results when using the MetONTIIME tool which qualifies as a replacement for the ONT method but could benefit from speedup to better use the available computing resources (we thank the author for his kind help furing tool install and usage).
+
+## Conclusion
+
+This analysis was done in order to evaluate the possibility to use genomic sequencing data for metagenomic classification.
+We believe that this is possible but we aknowledge that our analysis is very superficial and does not include quantitative evaluation of the results and proper comparison of the tools.
+This 16S sequence extraction is only an example of what insilico PCR could allow and we think that other capture examples could help biologists focus on specific genes or region of interest starting from ONT full-genome data to answer specific questions.
 
 ## References
 

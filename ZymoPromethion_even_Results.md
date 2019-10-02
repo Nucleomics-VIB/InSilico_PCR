@@ -206,9 +206,9 @@ We also observe similar bias in the results when using the MetONTIIME tool which
 
 ## Conclusion
 
-This analysis was done in order to evaluate the possibility to use genomic sequencing data for metagenomic classification.
-We believe that this is possible but we aknowledge that our analysis is very superficial and does not include quantitative evaluation of the results and proper comparison of the tools.
-This 16S sequence extraction is only an example of what insilico PCR could allow and we think that other capture examples could help biologists focus on specific genes or region of interest starting from ONT full-genome data to answer specific questions.
+This analysis was done to evaluate the use of Oxford nanopore genomic sequencing data for 16S metagenomic classification and compare different 16S amplicons.
+We believe that this is possible but we acknowledge that our analysis is quite superficial and does not include quantitative evaluation of the results and proper comparison of the tools.
+This 16S sequence extraction is only one example of what insilico PCR could allow and we think that other capture examples could help biologists focus on specific gene(s) or region(s) of interest starting from ONT full-genome data to answer specific questions.
 
 ## References
 

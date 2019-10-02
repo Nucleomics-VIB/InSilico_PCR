@@ -93,8 +93,7 @@ Please note that we counted here only classifications contributed by >1% of the 
 | Lactobacillus suebicus  |   .   |     .      |     .     |     3,1%     |
 | Listeria innocua        |   .   |    2,7%    |     .     |     **10,7%**    |
 | Listeria monocytogenes  | 14,1% |     .      |     .     |      .       |
-| Listeria welshimeri     |   .   |    14,9%   |     .     |     **5,4%**     |
-| Listeria welshimeri     |   .   |     .      |   16,0%   |      .       |
+| Listeria welshimeri     |   .   |    14,9%   |   16,0%   |     **5,4%**     |
 | Pseudomonas aeruginosa  |  4,2% |    5,6%    |    **4,1%**   |     4,5%     |
 | Salmonella enterica     | 10,4% |    5,2%    |    6,5%   |     **7,2%**     |
 | Staphylococcus aureus   | 15,5% |    10,9%   |   **13,9%**   |     7,7%     |
@@ -195,7 +194,7 @@ The final composition of the Zymo community using both toolboxes does not fully 
 
 * Escherichia coli is absent from the analysis results, except in the 337F-805R results. The absent reads may have been classified in <1% classes that are not counted here (thanks Simone for the suggestion).
 * Bacillus is represented by four separate species (subtilis, mojavensis, halotolerans, vallismortis) in the data while only expected as the single species 'subtilis' from the Zymo documentation.
-* Listeria monocytogenes is almost absent in teh MetONTIIME results although
+* Listeria monocytogenes is replaced by Listeria Welshimeri in both result sets.
 
 Although we cannot exclude that the classification may be biased by high degree of sequence identity between species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by *Sze & Schloss* <sup id="a8">[8](#f8)</sup>.
 

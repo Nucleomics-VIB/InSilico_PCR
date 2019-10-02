@@ -122,7 +122,7 @@ The second PCR (V4) shows most similarity with the expected ratio and Escherichi
 
 We did not invest enough time in using MetONTIIME to allow full comparison to the ONT epi2me method and only did a quick run in order to get comparable data. It is very likely that the tool can produce better results and the fact that it its code is accessible makes it more suited for development and research applications including the possibility to change reference database and adapt the parameters to a given metagenomic environment.
 
-The results of a default classification using out of the box parameters are reported in the table below, sorted by the first amplicon counts (*27F-U1492R*). **(§) Due to time/server constrains, only the first 10% of the date were used to classify with MetONTIIME**.
+The results of a default classification using out of the box parameters (and the PRJNA33175 reference database as described in the MetONTIIME doculentation) are reported in the table below, sorted by the first amplicon counts (*27F-U1492R*). **(§) Due to time/server constrains, only the first 10% of the date were used to classify with MetONTIIME**.
 
 * [metontiime results](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/MetONTIIME_results.csv) derived from the file **species_counts.txt**.
 

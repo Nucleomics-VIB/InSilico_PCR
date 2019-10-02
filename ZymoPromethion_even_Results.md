@@ -6,7 +6,7 @@ In this short white paper we used ONT fastq data obtained after sequencing the *
 
 The corresponding Oxford nanopore gDNA reads data **Zymo-PromethION-EVEN-BB-SN** was downloaded from the **[Nanopore GridION and PromethION Mock Microbial Community Data Community Release](https://github.com/LomanLab/mockcommunity)**<sup id="a2">[2](#f2)</sup>
 
-We used the gDNA reads as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a3a">[3a](#f3a)</sup>, the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a3a">[3a](#f3a)</sup>, or a 'universal' amplicon corresponding to the combination **515FB-U1492Rw** <sup id="a3a">[3a](#f3a)</sup>.
+We used the gDNA reads as input to extract **In-Silico** either the **'full-length'** 16S amplicon corresponding to the PCR **27F-U1492R** <sup id="a3">[3](#f3)</sup>, the shorter **V3V4** amplicon corresponding to the primer combination **337F-805R** <sup id="a3">[3](#f3)</sup>, or a 'universal' amplicon corresponding to the combination **515FB-U1492Rw** <sup id="a3">[3](#f3)</sup>.
 
 We emit the hypothesis that the gDNA sequencing done on the Zymo standard is unbiased as a matter of 16S content and therefore represents the ideal material to assess the efficiency and specificity of the [ONT 16S analysis pipeline](https://nanoporetech.com/nanopore-sequencing-data-analysis)<sup id="a4">[4](#f4)</sup>. 
 
@@ -14,7 +14,7 @@ In-Silico capture is not biased by primer mismatches as a real PCR would be, the
 
 The next figure represents the 16s region with variable domains as coloured blocks and a 2D model from *the Microbiome*.
 
- ![16S_regions](pictures/16S_regions_Yang.png) taken from <sup id="a3b">[3b](#f3b)</sup>
+ ![16S_regions](pictures/16S_regions_Yang.png) taken from <sup id="a5">[5](#f5)</sup>
 
  ![16S_regions](pictures/16S_2D.png) taken from [theMicrobiomeViewer](http://themicrobiome.com/media/16S_viewer.cfm)
 
@@ -65,7 +65,7 @@ REM: results shown below were obtained with a minimum abundance cutoff of 1% set
 
 ## MetONTIIME results
 
-**[MetONTIIME](https://github.com/MaestSi/MetONTIIME)** was recently created to offer an alternative to the ONT epi2me 'black-box' analysis solution. We show here a resuilt from MetONTIIME using the fastq data produced above in order to compare its results to those of ONT. Due to the size of the data, only the first 10% of each read set was used to classify the three amplicons.
+**[MetONTIIME](https://github.com/MaestSi/MetONTIIME)** <sup id="a6">[6](#f6)</sup> was recently created to offer an alternative to the ONT epi2me 'black-box' analysis solution. We show here a resuilt from MetONTIIME using the fastq data produced above in order to compare its results to those of ONT. Due to the size of the data, only the first 10% of each read set was used to classify the three amplicons.
 
 The results of the classification are reported in the table below, sorted by the first amplicon counts
 
@@ -179,7 +179,7 @@ Results at **Genus** level were obtained by adding up all related species and sh
 | Salmonella     | 10,4% | 5,2%       | 6,5%      | **7,2%**         |
 | Staphylococcus | 15,5% | 10,9%      | **14,7%**     | 7,7%         |
 
-The second PCR (V4) shows most similarity with the expected ratio and Escherichia is still lagging behind and is the main responsible for the difference between theoretical Zymo numbers and numbers from this experiment. Interestingly, such a broad difference is not apparent in the recent paper by *Karst et al* <sup id="a5">[5](#f5)</sup>
+The second PCR (V4) shows most similarity with the expected ratio and Escherichia is still lagging behind and is the main responsible for the difference between theoretical Zymo numbers and numbers from this experiment. Interestingly, such a broad difference is not apparent in the recent paper by *Karst et al* <sup id="a7">[7](#f7)</sup>
 
 ## Discussion
 
@@ -190,7 +190,7 @@ The final composition of the Zymo community does not fully match the expected re
 * Escherichia coli is absent from the analysis results, except in the 337F-805R results. The absent reads may have been classified in <1% classes that are not counted here (thanks Simone for the suggestion).
 * Bacillus is represented by four separate species (subtilis, mojavensis, halotolerans, vallismortis) in the data while only expected as the single species 'subtilis' from the Zymo documentation.
 
-Although we cannot exclude that the classification may be biased by high degree of sequence identity between species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by *Sze & Schloss* <sup id="a6">[6](#f6)</sup>.
+Although we cannot exclude that the classification may be biased by high degree of sequence identity between species due to the database used in the pipeline, we cannot either rule out that the Zymo sample also has issues concerning the proportion of the different genus as suggested in the genomic report published by *Sze & Schloss* <sup id="a8">[8](#f8)</sup>.
 
 This analysis suggests that the 16 pipeline is able to correctly classify the relatively simple Zymo community but may be biased in some ways and could make wrong assessments when working with more complex communities.
 
@@ -200,15 +200,18 @@ This analysis suggests that the 16 pipeline is able to correctly classify the re
 
 <b id="f2">2</b> Ultra-deep, long-read nanopore sequencing of mock microbial community standards [Link](https://www.biorxiv.org/content/10.1101/487033v2). [↩](#a2)
 
-<b id="f3A">3a</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a3a)
-
-<b id="f3b">3b</b> Sensitivity and correlation of hypervariable regions in 16S rRNA genes in phylogenetic analysis.
-Yang B, Wang Y, Qian PY. [Link](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0992-y). [↩](#a3b)
+<b id="f3">3</b> 16S ribosomal RNA [Link](https://en.wikipedia.org/wiki/16S_ribosomal_RNA). [↩](#a3)
 
 <b id="f4">4</b> Analysis solutions for nanopore sequencing data [link](https://nanoporetech.com/nanopore-sequencing-data-analysis). [↩](#a4)
 
-<b id="f5">5</b> Enabling high-accuracy long-read amplicon sequences using unique molecular identifiers and Nanopore sequencing. Soren Karst, Ryan M. Ziels, Rasmus H. Kirkegaard and Mads Albertsen [link](https://www.biorxiv.org/content/10.1101/645903v2). [↩](#a5)
+<b id="f5">5</b> Maestri S. et al. A Rapid and Accurate MinION-Based Workflow for Tracking Species Biodiversity in the Field. [link](https://doi.org/10.3390/genes10060468). [↩](#a5)
 
-<b id="f6">6</b> The impact of DNA polymerase and number of
+<b id="f6">6</b> Sensitivity and correlation of hypervariable regions in 16S rRNA genes in phylogenetic analysis.
+Yang B et al. [Link](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-0992-y). [↩](#a6)
+
+<b id="f7">7</b> Enabling high-accuracy long-read amplicon sequences using unique molecular identifiers and Nanopore sequencing. Karst, A et al. [link](https://www.biorxiv.org/content/10.1101/645903v2). [↩](#a7)
+
+<b id="f8">8</b> The impact of DNA polymerase and number of
 rounds of amplification in PCR on 16S rRNA
-gene sequence data. Marc A Sze & Patrick D Schloss [link](https://www.biorxiv.org/content/10.1101/565598v2). [↩](#a6)
+gene sequence data. Marc A Sze & Patrick D Schloss [link](https://www.biorxiv.org/content/10.1101/565598v2). [↩](#a8)
+

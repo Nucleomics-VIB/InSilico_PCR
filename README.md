@@ -37,8 +37,8 @@ The workflow is as follows:
 * Set variables, names, and numeric limits in the top of the **InSilico_PCR.sh** script (adjust the number of threads to the available cores in your own machine)
 
 * Run the script with 
-  * demo data: ./InSilico_PCR.sh -d
-  * your own read file present in the current folder: ./InSilico_PCR.sh <file_name>.fq.gz
+  * demo data: **./InSilico_PCR.sh -d**
+  * your own read file present in the current folder: **./InSilico_PCR.sh <file_name>.fq.gz**
 
 ## Results obtained with the demo data
 

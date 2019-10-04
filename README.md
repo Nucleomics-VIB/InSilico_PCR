@@ -22,27 +22,26 @@ The motivation behind this analysis was to simulate 16S long amplicon sequencing
 
 The method used to extract sequences between primers was developed by Brian Bushnell based on his [BBMap tools](https://jgi.doe.gov/data-and-tools/bbtools/) and is explained [here](https://www.biostars.org/p/216039/#216054).
 
-* Install the required software using conca or manually based on the list provided in **environment.yaml**. Also get the data from one of the links above.
-* Set names and numeric limits in the top of the **InSilico_PCR.sh** script (adjust the number of threads to the available cores in your own machine)
-* Run the script. 
-
 The workflow is as follows:
 
-* split the data in small chunks for speed-up using parallel
-* search forward primer in all chunks using BBMap msa.sh
-* search reverse primer in all chunks using BBMap msa.sh
+* split the data in smaller fastq bins for speed-up using parallel
+* search forward primer in all bins using BBMap msa.sh
+* search reverse primer in all bins using BBMap msa.sh
 * extract 'matching' regions using BBMAp cutprimers.sh 
-* merge all results and keep only regions larger than a certain size (by default excluding the 1% shortest sequences unless the cutoff value 'filterperc' is changed)
+* merge all results and keep only amplicons in a chosen size range (as set in the script)
 
 ## Usage
 
-To run the script with demo data
-* ./InSilico_PCR.sh -d
+* Install the required software using conca or manually based on the list provided in **environment.yaml**. 
 
-To run with your own data.fastq.gz file present in the current folder
-* ./InSilico_PCR.sh wnameW.fq.gz
+* Set variables, names, and numeric limits in the top of the **InSilico_PCR.sh** script (adjust the number of threads to the available cores in your own machine)
 
-## Results with demo data
+Run the script with 
+
+* demo data: ./InSilico_PCR.sh -d
+* your own read file present in the current folder: ./InSilico_PCR.sh <file_name>.fq.gz
+
+## Results obtained with the demo data
 
 The results of a 16S In-Silico PCR experiment are presented **[here](ZymoPromethion_even_Results.md)**.
 

@@ -118,7 +118,7 @@ mkdir -p ${tmpout}
 # download data for -d (once only)
 
 if [[ "$1" == "-d" ]]; then
-	if [[ ! -f ${logs}/done.gettingdata ]]; then
+	if [[ ! -f "${infile}" ]]; then
   		echo "# downloading ${infile} (may take some time!)"
   		wget ${url}/${infile}
   		touch ${logs}/done.gettingdata}

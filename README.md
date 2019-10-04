@@ -34,7 +34,15 @@ The workflow is as follows:
 * extract 'matching' regions using BBMAp cutprimers.sh 
 * merge all results and keep only regions larger than a certain size (by default excluding the 1% shortest sequences unless the cutoff value 'filterperc' is changed)
 
-## Results
+## Usage
+
+To run the script with demo data
+* ./InSilico_PCR.sh -d
+
+To run with your own data.fastq.gz file present in the current folder
+* ./InSilico_PCR.sh wnameW.fq.gz
+
+## Results with demo data
 
 The results of a 16S In-Silico PCR experiment are presented **[here](ZymoPromethion_even_Results.md)**.
 

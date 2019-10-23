@@ -44,7 +44,7 @@ The workflow is as follows:
 
 * the results of a 16S In-Silico PCR experiment are presented in **[ZymoPromethion_even_Results](ZymoPromethion_even_Results.md)**.
 
-* the results of using other databases for the MetONTIIME classification are reported in a case study in **[Metontiime_with_other_DBs.pdf](https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/Metontiime_with_other_DBs.pdf)**.
+* the results of using other databases for the MetONTIIME classification are reported **<a href="https://github.com/Nucleomics-VIB/InSilico_PCR/raw/master/results/Metontiime_with_other_DBs.pdf" target="_blank">here</a>**.
 
 ## Future plans
 

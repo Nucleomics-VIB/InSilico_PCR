@@ -27,16 +27,16 @@ conda activate InSilico_PCR || \
 # REM: the workflow can be restarted by deleting all log files after a given step
 
 # speed-up
-thr=80
-pigt=8
-mem="8g"
+thr=8
+pigt=2
+mem="1g"
 
 # extract reads corresponding to the 16S PCR
 # Long ONT amplicon
-#forwardp="AGAGTTTGATCMTGGCTCAG"
-#forwardl="27F"
-#reversep="CGGTWACCTTGTTACGACTT"
-#reversel="1492Rw"
+forwardp="AGAGTTTGATCMTGGCTCAG"
+forwardl="27F"
+reversep="CGGTWACCTTGTTACGACTT"
+reversel="1492Rw"
 
 # typical V4 amplicon
 #forwardp="GACTCCTACGGGAGGCWGCAG"
@@ -51,10 +51,10 @@ mem="8g"
 #reversel="1492Rw"
 
 # 4.4kb +/-full-length rRNA amplicon 
-forwardp="AGRGTTYGATYMTGGCTCAG"
-forwardl="ncec_16S_8F_v7"
-reversep="CGACATCGAGGTGCCAAAC"
-reversel="ncec_23S_2490R_v7"
+#forwardp="AGRGTTYGATYMTGGCTCAG"
+#forwardl="ncec_16S_8F_v7"
+#reversep="CGACATCGAGGTGCCAAAC"
+#reversel="ncec_23S_2490R_v7"
 
 # be stringent to avoid noisy reads
 cut=0.8

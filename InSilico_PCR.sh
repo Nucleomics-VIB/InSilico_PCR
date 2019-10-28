@@ -10,7 +10,8 @@
 # version 1.1; 2019-10-04
 # better handling of input file
 # better handling of parallel jobs and threads
-#
+# version 1.1.1; 2019-10-28
+# lower specs to better match low-end servers
 # visit our Git: https://github.com/Nucleomics-VIB
 #
 # required once: create a conda env to install the required apps

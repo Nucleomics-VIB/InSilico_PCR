@@ -12,7 +12,14 @@
 # better handling of parallel jobs and threads
 # version 1.1.1; 2019-10-28
 # lower specs to better match low-end servers
+# version 1.1.2; 2019-10-29
+# add qin=${qual} to extraction command
+# add include primer (t/f) as option in header
+# reformat to page width
+#
 # visit our Git: https://github.com/Nucleomics-VIB
+#
+version="1.1.2; 2019-10-29"
 #
 # required once: create a conda env to install the required apps
 # conda env create -f environment.yaml
@@ -20,8 +27,9 @@
 # see conda activate script for details
 source /etc/profile.d/conda.sh
 conda activate InSilico_PCR || \
-	( echo "# the conda environment 'InSilico_PCR' was not found on this machine, please read the top part of the script!" \
-	&& exit 1 )
+  ( echo "# the conda environment 'InSilico_PCR' was not found on this machine" ;
+    echo "# please read the top part of the script!" \
+    && exit 1 )
 
 ########## start user editable region ##############
 
@@ -51,7 +59,7 @@ reversel="1492Rw"
 #reversep="CGGTWACCTTGTTACGACTT"
 #reversel="1492Rw"
 
-# 4.4kb +/-full-length rRNA amplicon 
+# 4.4kb +/-full-length rRNA amplicon
 #forwardp="AGRGTTYGATYMTGGCTCAG"
 #forwardl="ncec_16S_8F_v7"
 #reversep="CGACATCGAGGTGCCAAAC"
@@ -71,23 +79,26 @@ qual=33
 readminlen=10
 readmaxlen=100000
 
+# wether to include the primer matches or to clip them (t/f)
+primincl="t"
+
 ######## end of user editable region ############
 
 # test arguments
 if [ -z "$1" ]; then
-    echo -e "\nUsage: $0 -d (for demo) 
-     or 
+    echo -e "\nUsage: $0 -d (for demo)
+     or
        $0 <path to a local fastq.gz file>\n"
     exit 1
 fi
 
 if [[ "$1" == "-d" ]]; then
-        # get mockcommunity data from the cloud
-        # https://github.com/LomanLab/mockcommunity
-        infile="Zymo-PromethION-EVEN-BB-SN.fq.gz"
-        url="https://nanopore.s3.climb.ac.uk"
+    # get mockcommunity data from the cloud
+    # https://github.com/LomanLab/mockcommunity
+    infile="Zymo-PromethION-EVEN-BB-SN.fq.gz"
+    url="https://nanopore.s3.climb.ac.uk"
 else
-        if [ -f "${1}" ]; then
+    if [ -f "${1}" ]; then
         infile=$1
     else
         echo "# input file not found!"
@@ -119,13 +130,13 @@ mkdir -p ${tmpout}
 # download data for -d (once only)
 
 if [[ "$1" == "-d" ]]; then
-	if [[ ! -f "${infile}" ]]; then
-  		echo "# downloading ${infile} (may take some time!)"
-  		wget ${url}/${infile}
-  		touch ${logs}/done.gettingdata}
-	else
-  		echo "# ${infile} was already downloaded from ${url}"
-	fi
+  if [[ ! -f "${infile}" ]]; then
+    echo "# downloading ${infile} (may take some time!)"
+    wget ${url}/${infile}
+    touch ${logs}/done.gettingdata}
+  else
+    echo "# ${infile} was already downloaded from ${url}"
+  fi
 fi
 
 ###########################################
@@ -133,8 +144,10 @@ fi
 
 if [[ ! -f ${logs}/done.splitting ]]; then
   echo "# splitting the data in multiple smaller files and compressing (may take some time!)"
-  zcat ${infile} | split -a 3 -d -l ${lines} --filter='pigz -p '${pigt}' > $FILE.fq.gz' - ${split}/${name}_ &&
-    touch  ${logs}/done.splitting
+  zcat ${infile} | \
+    split -a 3 -d -l ${lines} --filter='pigz -p '${pigt}' \
+    > $FILE.fq.gz' - ${split}/${name}_ && \
+  touch  ${logs}/done.splitting
 else
   echo "# splitting already done"
 fi
@@ -158,7 +171,12 @@ if [[ ! -f ${logs}/done.searching.${name}_${forwardl} ]]; then
   echo "# searching for forward primer sequence: ${forwardp} in all files"
   find ${split} -type f -name "${name}_???.fq.gz" -printf '%P\n' |\
     sort -n |\
-    parallel -j ${jobs} msa.sh -Xmx${mem} threads=${jobt} qin=${qual} in=${split}/{} out=${tmpout}/forward_{}.sam literal="${forwardp}" rcomp=t cutoff=${cut} && \
+    parallel -j ${jobs} msa.sh -Xmx${mem} threads=${jobt} \
+      qin=${qual} \
+      in=${split}/{} \
+      out=${tmpout}/forward_{}.sam \
+      literal="${forwardp}" \
+      rcomp=t cutoff=${cut} && \
     touch ${logs}/done.searching.${name}_${forwardl}
 else
   echo "# forward search already done"
@@ -171,8 +189,14 @@ if [[ ! -f ${logs}/done.searching.${name}_${reversel} ]]; then
   echo "# searching for reverse primer sequence: ${reversep} in all files"
   find ${split} -type f -name "${name}_???.fq.gz" -printf '%P\n' |\
     sort -n |\
-    parallel -j ${jobs} msa.sh -Xmx${mem} threads=${jobt} qin=${qual} in=${split}/{} out=${tmpout}/reverse_{}.sam literal="${reversep}" rcomp=t cutoff=${cut} && \
-    touch ${logs}/done.searching.${name}_${reversel}
+    parallel -j ${jobs} msa.sh -Xmx${mem} threads=${jobt} \
+      qin=${qual} \
+      in=${split}/{} \
+      out=${tmpout}/reverse_{}.sam \
+      literal="${reversep}" \
+      rcomp=t \
+      cutoff=${cut} && \
+  touch ${logs}/done.searching.${name}_${reversel}
 else
   echo "# reverse search already done"
 fi
@@ -181,10 +205,17 @@ fi
 # extract regions with BBMap cutprimers.sh
 
 if [[ ! -f ${logs}/done.cutprimer.${name}_${forwardl}_${reversel} ]]; then
-echo "# extracting template sequences between primer matches"
-find ${split} -type f -name "${name}_???.fq.gz" -printf '%P\n' |\
-  sort -n |\
-  parallel -j ${thr} cutprimers.sh -Xmx${mem} in=${split}/{} out=${tmpout}/{}_16s.fq sam1=${tmpout}/forward_{}.sam sam2=${tmpout}/reverse_{}.sam include=t fixjunk=t && \
+  echo "# extracting template sequences between primer matches"
+  find ${split} -type f -name "${name}_???.fq.gz" -printf '%P\n' |\
+    sort -n |\
+    parallel -j ${thr} cutprimers.sh -Xmx${mem} \
+      qin=${qual} \
+      in=${split}/{} \
+      out=${tmpout}/{}_16s.fq \
+      sam1=${tmpout}/forward_{}.sam \
+      sam2=${tmpout}/reverse_{}.sam \
+      include=${primincl} \
+      fixjunk=t && \
   touch ${logs}/done.cutprimer.${name}_${forwardl}_${reversel}
 fi
 
@@ -195,15 +226,18 @@ if [[ ! -f ${logs}/done.merging.${name}_${forwardl}_${reversel} ]]; then
   # clear existing results
   final="${name}_${forwardl}_${reversel}.${ts}.fq.gz"
   cat /dev/null > ${final}
-  echo "# filtering results at min:${readminlen} and max:${readmaxlen} and merging results to ${final}"
-  find ${tmpout} -type f -name "${name}_???.fq.gz_16s.fq" | sort -n |\
+  echo "# filtering results at min:${readminlen} and max:${readmaxlen} and merging to ${final}"
+  find ${tmpout} -type f -name "${name}_???.fq.gz_16s.fq" | \
+    sort -n |\
     xargs cat |\
     bioawk -c fastx -v min="${readminlen}" -v max="${readmaxlen}" \
-    '{if (length($seq)>=min && length($seq)<=max) print "@"$name" "$comment"\n"$seq"\n+\n"$qual}' |\
+    '{if (length($seq)>=min && length($seq)<=max)
+      print "@"$name" "$comment"\n"$seq"\n+\n"$qual}' |\
     bgzip >> ${final} && \
-    touch ${logs}/done.merging.${name}_${forwardl}_${reversel}
+  touch ${logs}/done.merging.${name}_${forwardl}_${reversel}
 else
-  echo "# merging and filtering already done, force redo by deleting ${logs}/done.merging.${name}_${forwardl}_${reversel}"
+  echo "# merging and filtering already done"
+  echo "# force redo by deleting ${logs}/done.merging.${name}_${forwardl}_${reversel}"
 fi
 
 # return to normal

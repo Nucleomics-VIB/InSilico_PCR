@@ -79,7 +79,7 @@ qual=33
 readminlen=10
 readmaxlen=100000
 
-# wether to include the primer matches or to clip them (t/f)
+# whether to include the primer matches or to clip them (t/f)
 primincl="t"
 
 ######## end of user editable region ############

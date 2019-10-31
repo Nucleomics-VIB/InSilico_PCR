@@ -126,6 +126,13 @@ mkdir -p ${split}
 tmpout="bbmap_out_${name}_${forwardl}_${reversel}"
 mkdir -p ${tmpout}
 
+# keep track of all
+runlog=${logs}/runlog.txt
+exec &> >(tee -i ${runlog})
+
+# also echo commands to log (verbose!)
+# set -x
+
 ##################################
 # download data for -d (once only)
 
@@ -224,7 +231,7 @@ fi
 
 if [[ ! -f ${logs}/done.merging.${name}_${forwardl}_${reversel} ]]; then
   # clear existing results
-  final="${name}_${forwardl}_${reversel}.${ts}.fq.gz"
+  final="${name}_filtered_${forwardl}_${reversel}.fq.gz"
   cat /dev/null > ${final}
   echo "# filtering results at min:${readminlen} and max:${readmaxlen} and merging to ${final}"
   find ${tmpout} -type f -name "${name}_???.fq.gz_16s.fq" | \

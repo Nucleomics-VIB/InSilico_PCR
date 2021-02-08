@@ -34,6 +34,8 @@ The workflow is as follows:
 
 * Install the required software using conca or manually based on the list provided in **environment.yaml**. 
 
+REM: Snakemake does not always install well with bioconda and can be removed from the file environment.yaml if you encounter issues. It is not used in the current version of this code anyway and was added here for forward compatibility.
+
 * Set variables, names, and numeric limits in the top of the **InSilico_PCR.sh** script (adjust the number of threads to the available cores in your own machine)
 
 * Run the script with 

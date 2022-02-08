@@ -16,10 +16,12 @@
 # add qin=${qual} to extraction command
 # add include primer (t/f) as option in header
 # reformat to page width
-#
+# version 1.1.3; 2022-02-08
+# rename logs folder to allow consecutive runs
+# 
 # visit our Git: https://github.com/Nucleomics-VIB
 #
-version="1.1.2; 2019-10-29"
+version="1.1.3; 2022-02-08"
 #
 # required once: create a conda env to install the required apps
 # conda env create -f environment.yaml
@@ -116,7 +118,7 @@ name=$(basename ${infile%\.fq\.gz})
 data="$(pwd)"
 
 # run logs
-logs="run_logs"
+logs="run_logs_${name}"
 mkdir -p ${logs}
 
 # result folders

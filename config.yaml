@@ -1,6 +1,6 @@
 ---
 # path to conda on my own machine (adapt for yours)
-condapath: "/opt/biotools/miniconda3/condabin"
+condapath: "/opt/miniconda3/condabin"
 condaenv: "InSilico_PCR"
 
 # threads for parallel tasks

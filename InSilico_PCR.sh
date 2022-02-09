@@ -117,14 +117,15 @@ name=$(basename ${infile%\.fq\.gz})
 # working default to local folder
 data="$(pwd)"
 
-# run logs
-logs="run_logs_${name}"
-mkdir -p ${logs}
-
-# result folders
+# split folder
 split="split_data_${name}"
 mkdir -p ${split}
 
+# run logs
+logs="run_logs_${name}_${forwardl}_${reversel}"
+mkdir -p ${logs}
+
+# tmp output folder
 tmpout="bbmap_out_${name}_${forwardl}_${reversel}"
 mkdir -p ${tmpout}
 

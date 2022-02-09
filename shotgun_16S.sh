@@ -76,6 +76,10 @@ mkdir -p ${logs}
 tmpout="shotgun_16S_${name}_${forwardl}_${reversel}"
 mkdir -p ${tmpout}
 
+# $TMPDIR for accessory outputs
+mkdir -p TEMPDIR
+export $TMPDIR=TMPDIR
+
 # keep track of all
 runlog=${logs}/runlog.txt
 exec &> >(tee -i ${runlog})

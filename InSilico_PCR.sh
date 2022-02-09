@@ -122,7 +122,7 @@ split="split_data_${name}"
 mkdir -p ${split}
 
 # run logs
-logs="run_logs_${name}_${forwardl}_${reversel}"
+logs="run_logs_${name}"
 mkdir -p ${logs}
 
 # tmp output folder

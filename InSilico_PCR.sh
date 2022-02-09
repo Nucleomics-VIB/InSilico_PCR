@@ -18,7 +18,8 @@
 # reformat to page width
 # version 1.1.3; 2022-02-08
 # rename logs folder to allow consecutive runs
-#
+# add TMPDIR for bbmap and parallel
+# 
 # visit our Git: https://github.com/Nucleomics-VIB
 #
 version="1.1.3; 2022-02-08"
@@ -130,7 +131,7 @@ tmpout="bbmap_out_${name}_${forwardl}_${reversel}"
 mkdir -p ${tmpout}
 
 # $TMPDIR for accessory outputs
-mkdir -p TEMPDIR
+mkdir -p TMPDIR
 export $TMPDIR=TMPDIR
 
 # keep track of all
@@ -185,7 +186,7 @@ if [[ ! -f ${logs}/done.searching.${name}_${forwardl} ]]; then
   echo "# searching for forward primer sequence: ${forwardp} in all files"
   find ${split} -type f -name "${name}_???.fq.gz" -printf '%P\n' |\
     sort -n |\
-    parallel -j ${jobs} msa.sh -Xmx${mem} threads=${jobt} \
+    parallel --workdir . --tmpdir ${TMPDIR} -j ${jobs} msa.sh -Xmx${mem} threads=${jobt} \
       qin=${qual} \
       in=${split}/{} \
       out=${tmpout}/forward_{}.sam \
@@ -203,7 +204,7 @@ if [[ ! -f ${logs}/done.searching.${name}_${reversel} ]]; then
   echo "# searching for reverse primer sequence: ${reversep} in all files"
   find ${split} -type f -name "${name}_???.fq.gz" -printf '%P\n' |\
     sort -n |\
-    parallel -j ${jobs} msa.sh -Xmx${mem} threads=${jobt} \
+    parallel --workdir . --tmpdir ${TMPDIR} -j ${jobs} msa.sh -Xmx${mem} threads=${jobt} \
       qin=${qual} \
       in=${split}/{} \
       out=${tmpout}/reverse_{}.sam \
@@ -222,7 +223,7 @@ if [[ ! -f ${logs}/done.cutprimer.${name}_${forwardl}_${reversel} ]]; then
   echo "# extracting template sequences between primer matches"
   find ${split} -type f -name "${name}_???.fq.gz" -printf '%P\n' |\
     sort -n |\
-    parallel -j ${thr} cutprimers.sh -Xmx${mem} \
+    parallel --workdir . --tmpdir ${TMPDIR} -j ${thr} cutprimers.sh -Xmx${mem} \
       qin=${qual} \
       in=${split}/{} \
       out=${tmpout}/{}_16s.fq \

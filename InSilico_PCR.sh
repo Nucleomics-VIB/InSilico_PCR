@@ -18,7 +18,7 @@
 # reformat to page width
 # version 1.1.3; 2022-02-08
 # rename logs folder to allow consecutive runs
-# 
+#
 # visit our Git: https://github.com/Nucleomics-VIB
 #
 version="1.1.3; 2022-02-08"

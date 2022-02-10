@@ -44,19 +44,19 @@ pigt=2
 mem="1g"
 
 # extract reads corresponding to the 16S PCR
-# Long ONT amplicon
+# Long ONT / PacBio amplicon V1-V9
 forwardp="AGAGTTTGATCMTGGCTCAG"
 forwardl="27F"
 reversep="CGGTWACCTTGTTACGACTT"
 reversel="1492Rw"
 
-# typical V4 amplicon
+# typical V3-V4 amplicon
 #forwardp="GACTCCTACGGGAGGCWGCAG"
 #forwardl="337F"
 #reversep="GACTACHVGGGTATCTAATCC"
 #reversel="805R"
 
-# hybrid amplicon, a bit longer
+# hybrid amplicon V4-V9 a bit longer
 #forwardp="GTGYCAGCMGCCGCGGTAA"
 #forwardl="515FB"
 #reversep="CGGTWACCTTGTTACGACTT"

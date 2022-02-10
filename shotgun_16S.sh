@@ -26,7 +26,7 @@ mem="24g"
 
 # extract reads corresponding to the 16S PCR
 
-# typical V4 amplicon
+# typical V3-V4 amplicon
 forwardp="GACTCCTACGGGAGGCWGCAG"
 forwardl="337F"
 reversep="GACTACHVGGGTATCTAATCC"

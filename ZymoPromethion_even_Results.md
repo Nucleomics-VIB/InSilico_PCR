@@ -219,7 +219,7 @@ Genus (level5) barplot generated in the **[Qiime viewer](https://view.qiime2.org
 
 ## Discussion
 
-Results obtained with this public data show that the ONT epi2me analysis pipeline is relatively robust when comparing three PCR amplicons and returns quasi identical classification dosn to species level.
+Results obtained with this public data show that the ONT epi2me analysis pipeline is relatively robust when comparing three PCR amplicons and returns quasi identical classification down to species level.
 
 MetONTIIME, although slow for such large datasets, due to a number of steps using a single cpu, also classifies the community in a relatively similar way. No quantitative analysis was done here to correlate the two tools since the MetONTIIME run was only done on partial data.
 
